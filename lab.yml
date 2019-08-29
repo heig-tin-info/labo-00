@@ -1,0 +1,12 @@
+name: Prise en main de l'ordinateur
+difficulty: 1
+periods: 2
+goals:
+- Familiarisation avec la structure IT de la HEIG-VD
+- Savoir lire un intitué de laboratoire (oui, oui c'est pas si facile)
+- Appliquer la marche à suivre pour obtenir et rendre un travail pratique
+- Découverte et installation des outils utiles pour ce cours
+topics:
+- installation
+- compliateur
+- éditeur de code
