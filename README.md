@@ -183,7 +183,7 @@ A présent, effectuez les opérations suivantes et reportez vos observations dan
 
 La HEIG-VD dispose de stations de travail à chaque étage permettant l'impression et le scan de documents. La technologie **FollowMe** permet de retenir vos impressions jusqu'à ce que vous soyez pret à récupérer vos documents.
 
-1. Chercher dans l'[intranet](intra.heig-vd.ch) la documentation sur **FollowMe**.
+1. Chercher dans l'[intranet](http://intra.heig-vd.ch) la documentation sur **FollowMe**.
 2. Installer les deux imprimantes proposées.
 3. Imprimez la première page de votre rapport en Noir et Blanc.
 4. Faite un avion en papier.
