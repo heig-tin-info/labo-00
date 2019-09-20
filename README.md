@@ -51,9 +51,9 @@ Une fois connecté sur votre ordinateur, expérimentez:
 - Un bref appui sur la touche Windows positionnée sur le clavier à gauche de la barre d'espace et entre `<CTRL>` et `<ALT>`
   - ouvre le menu **démarrer** duquel vous accédez à vos programmes.
   - Une frappe au clavier alors que le menu est ouvert vous permet la recherche de programmes
-- La combinaison de touches `<CTRL>`+`<R>` fait apparaître le menu **exécuter**.
+- La combinaison de touches `<WIN>`+`<R>` fait apparaître le menu **exécuter**.
   - L'invité de dialogue vous permet d'entrer un nom de programme.
-- La combinaison de touches `<CTRL>`+`<E>` fait apparaître l'explorateur de fichiers.
+- La combinaison de touches `<WIN>`+`<E>` fait apparaître l'explorateur de fichiers.
   - Il permet de naviguer dans votre arborescence et d'accéder à vos documents.
 - La combinaison de touches `<WIN>`+`<L>` vérouille votre ordinateur.
   - Il est important de toujours vérouiller votre ordinateur lorsque vous vous absentez.
