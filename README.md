@@ -1,6 +1,6 @@
 # Prise en main de l'ordinateur
 
-**Durée: 2x45 minutes**
+**Durée: 2x45 minutes + travail à la maison**
 **Rendu: au plus tard 6 jours après le début du laboratoire, avant minuit**
 
 <!-- TOC -->
@@ -31,9 +31,9 @@
       - [Déloyement de votre clé publique](#déloyement-de-votre-clé-publique)
       - [Deployement de votre clé GPG (optionnel)](#deployement-de-votre-clé-gpg-optionnel)
       - [Précisions sur toutes ces clés](#précisions-sur-toutes-ces-clés)
-    - [Découvertes des fonctionnalités](#découvertes-des-fonctionnalités)
+    - [Découvertes des fonctionnalités de GitHub](#découvertes-des-fonctionnalités-de-github)
     - [Clone du laboratoire](#clone-du-laboratoire)
-  - [Python (point optionnel si vous êtes curieux et que vous avez le temps)](#python-point-optionnel-si-vous-êtes-curieux-et-que-vous-avez-le-temps)
+  - [Résumé](#résumé)
 
 <!-- /TOC -->
 
@@ -483,7 +483,7 @@ Votre identifiant GitHub (login/password) vous permet d'accéder au site interne
 
 Votre clé SSH vous permet aussi d'accéder à d'autres ordinateurs à distance depuis Linux (par exemple un Raspberry PI), elle n'est pas uniquement dédiée à Git. Votre clé GPG aussi peut être utilisée pour d'autres applications. Vous pouvez par exemple chiffrez des docuemnts, créer des messages secrets etc.
 
-### Découvertes des fonctionnalités
+### Découvertes des fonctionnalités de GitHub
 
 1. Rendez-vous sur le fichier [addrman.cpp](https://github.com/bitcoin/bitcoin/blob/d0f81a96d9c158a9226dc946bdd61d48c4d42959/src/addrman.cpp) du code source des Bitcoin
 2. Cherchez s'il y a une [Delorean](https://fr.wikipedia.org/wiki/DeLorean_DMC-12) dane le fichier
@@ -509,7 +509,7 @@ Expliquez dans votre rapport ce que vous avez compris de cette fonctionnalité `
 
 Par la suite, les énnoncés des travaux pratiques seront accompagnés de code source à compléter. Les référentiels de code seront disponibles sur GitHub. Le rendu du travail consistera à publier vos changements sur GitHub.
 
-1. Lancer WSL
+1. Lancer Ubuntu
 2. Cloner le référentiel de ce travail pratique avec la commande:
 
    ```sh
@@ -519,20 +519,19 @@ Par la suite, les énnoncés des travaux pratiques seront accompagnés de code s
 3. Naviguer dans ce répertoire avec `cd info1-labo-00`
 4. Ouvrez le projet avec Visual Studio Code avec `code .` (n'oubliez pas le point)
 
-## Python (point optionnel si vous êtes curieux et que vous avez le temps)
+## Résumé
 
-Python est un langage de programmation qui vous sera certainement utile durant vos études. Il n'est pas nécessaire pour ce cours de programmation en C, cette étape est par conséquent optionelle.
+Bravo, vous venez de terminer ce premier travail pratique. Durant toute la procédure vous avez pu :
 
-1. Ouvrez un terminal WSL (Icône Tux sur votre bureau)
-2. Installer Python avec `sudo apt-get install python3 python3-pip python3-ipython` (n'oubliez pas le `3`)
-3. Exécutez Python avec `ipython` et saisissez le listing suivant:
-
-```python
-c = 299792458 # Vitesse de la lumière en mètres par secondes
-D = 149597870 # Distance soleil-terre en kilomètres
-d = 6378.137 # Rayon équatorial de la terre
-
-D * 1000 / c / 60 # Temps en minutes du parcours de la lumière du soleil à la terre
-```
-
-Pour quitter l'interface, utilisez la commande `quit` ou utiliser `<CTRL>+<D>`.
+- Accéder aux infrastructures réseau de l'école
+- Imprimer des documents
+- Faire une photo et la redimensionner
+- Créer un rapport Word
+- Installer Linux sous Windows
+- Configurer Git
+- Créer un compte sur GitHub
+- Créer une clé SSH et éventuellement GPG
+- Installer Microsoft Visual Studio Code (VsCode)
+- Vu que la Calculatrice Windows est open-source et qu'elle renferme de nombreuses fonctionnalités intéressantes
+- Exécuter des programmes sous Linux comme `cowsay`
+- Installer un gestionnaire de paquets pour Windows nommé Chocolatey
