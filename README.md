@@ -40,7 +40,9 @@
 
 ## Introduction
 
-Ce travail pratique permet à l'étudiant la prise en main avec Microsoft Windows et les outils qui seront utilisés durant le semestre. Le cours étant essentiellement axé ligne de commande, il est naturel de s'orienter davantage sur un environnement de travail en ligne de commande. Depuis 2016 Microsoft propose un produit nommé **Windows Subsystem for Linux**. Il s'agit d'une distribution Linux tournant dans Windows. C'est cet outil qui sera proposé pour le semestre.
+Ce travail pratique permet à l'étudiant la prise en main avec Microsoft Windows et les outils qui seront utilisés durant le semestre. Le cours étant essentiellement axé ligne de commande, il est naturel de s'orienter davantage sur un environnement de travail en ligne de commande. Depuis 2016 Microsoft propose un produit nommé **Windows Subsystem for Linux**. Il s'agit d'une distribution Linux tournant dans Windows. 
+
+C'est cet outil qui sera proposé pour le semestre. Les utilisateurs de macOS et de Linux devraient pouvoir s'adapter facilement.
 
 Linux, macOS ou Windows sont des systèmes d'exploitations qui offrent une interface utilisateur (graphique et en ligne de commande), permettant d'exécuter des programmes, de se connecter à des réseaux informatique. Linux, UNIX et macOS sont des systèmes dit **POSIX**, c'est à dire qu'ils respectent tous une norme bien précise sur le fonctionnement du système d'exploitation. Cette norme étant très appréciée, elle est utilisée dans beaucoup de systèmes : centres de calculs, serveur web, serveurs de fichiers, satellites, Tesla, fusées spatiales, téléphones mobiles (Android et iPhone) et d'autres. Le système d'exploitation Windows est quant à lui très apprécié pour les travaux de bureautiques et les terminaux graphiques. Beaucoup de développeurs utilisent aujourd'hui Windows coinjointement avec Linux.
 
@@ -55,7 +57,7 @@ Ce cours d'introduction au C, s'appuyera sur cette philosophie.
 
 ## Prise en main de votre ordinateur
 
-Démarrez votre PC et connectez-vous au réseau de l'école en utilisant vos identifiants personnels [AAI](https://aai-admin.hes-so.ch). Votre login est votre prénom et votre nom séparé par un point. Votre nom de famille pourrait être tronqué si l'ensemble dépasse 13 caractères. Votre mot de passe c'est... bah votre mot de passe...Il se pourrait que vous deviez préfixer votre login par le nom du domaine informatique de l'école (`einet.ad.eivd.ch`) ou simplement `einet`. Ainsi vous pourriez avoir quelque chose comme : `einet\yves.chevalli`.
+Démarrez votre PC et connectez-vous au réseau de l'école en utilisant vos identifiants personnels [AAI](https://aai-admin.hes-so.ch). Votre login est votre prénom et votre nom séparé par un point. Votre nom de famille pourrait être tronqué si l'ensemble dépasse 13 caractères. Votre mot de passe c'est... bah votre mot de passe... Il se pourrait que vous deviez préfixer votre login par le nom du domaine informatique de l'école (`einet.ad.eivd.ch`) ou simplement `einet`. Ainsi vous pourriez avoir quelque chose comme : `einet\yves.chevalli`.
 
 Une fois connecté sur votre ordinateur, expérimentez :
 
@@ -69,7 +71,7 @@ Une fois connecté sur votre ordinateur, expérimentez :
 - La combinaison de touches `<WIN>`+`<L>` vérouille votre ordinateur.
   - Il est important de toujours vérouiller votre ordinateur lorsque vous vous absentez.
 
-Notez qu'une séquence au clavier peut être exprimée comme une suite de combinaisons de touches. Les chevrons `<>` seront utilisés pour différentier un ou des caractères d'une touche du clavier. Par exemple, la touche de tabulation (↹) sera indiquée `<TAB>` alors que `TAB` correspondra à la frappe des trois caractères `T`, `A` et `B`. Lorsque des touches sont séparées par le signe `+` il s'agit alors d'une combinaison de touches. C'est à dire le maintien simultané des touches concernées. Dès lors `<CTRL>`+`<R>` correspond à maintenir la touche **contrôle** pendant que la touche `R` est appuyée. Sur internet et dans de nombreuses documentation, cette notation est souvent abrégée et ce même raccourci pourrait s'écrire `<C-R>`. À vous d'interprêter selon le contexte...
+Notez qu'une séquence au clavier peut être exprimée comme une suite de combinaisons de touches. Les chevrons `<>` seront utilisés pour différentier un ou des caractères d'une touche du clavier. Par exemple, la touche de tabulation (↹) sera indiquée `<TAB>` alors que `TAB` correspondra à la frappe des trois caractères `T`, `A` et `B`. Lorsque des touches sont séparées par le signe `+` il s'agit alors d'une combinaison de touches. C'est à dire le maintien simultané des touches concernées. Dès lors `<CTRL>`+`<R>` correspond à maintenir la touche **contrôle** pendant que la touche `R` est appuyée. Sur internet et dans de nombreuses documentations, cette notation est souvent abrégée et ce même raccourci pourrait s'écrire `<C-R>`. À vous d'interprêter convenablement ces écritures selon le contexte.
 
 Voici deux séquences de touches, que font-elles ?
 
@@ -82,13 +84,19 @@ Exécutez `%userprofile%` depuis le menu *exécuter* (`<W-E>`), l'explorateur de
 
 Soyez succint, votre rapport doit être précis et ne mentionner que l'essentiel.
 
+Répondez à ces questions dans votre rapport :
+
+- C'est quoi POSIX ?
+- Quel est le raccourcis Windows pour exécuter rapidement un programme ? 
+- Quel est le raccourcis Windows pour vérouiller l'ordinateur ?
+
 ## Rendu du laboratoire
 
 Durant ce travail pratique, plusieurs documents seront à rendre. Pour se préparer à ce rendu, commençez tout d'abord par créer un dossier :
 
 1. Dans `Mes Documents` ou sur votre bureau, créez un dossier intitulé `labo-00`.
 2. Placez-y le fichier `two-pies.txt` créé plus haut.
-3. Constatez que ce dossier contient maintenant un seul et unique fichier
+3. Constatez que ce dossier contient maintenant un seul et unique fichier.
 
 *Spoiler alert* : à la fin de ce travail vous aurez dans votre dossier la structure suivante :
 
@@ -103,17 +111,17 @@ Durant ce travail pratique, plusieurs documents seront à rendre. Pour se prépa
 └── two-pies.txt
 ```
 
-Un fois le travail terminé (notez bien ce point, car ce sera le dernier à faire avant le rendu du laboratoire) : crééez une archive [compressée](https://www.google.com/search?q=windows+how+to+compress+folder) de ce dossier puis envoyez votre archive comprimée par e-mail à votre professeur.
+Un fois le travail terminé (notez bien ce point, car ce sera le dernier à faire avant le rendu du laboratoire) : crééez une archive [compressée](https://www.google.com/search?q=windows+how+to+compress+folder) de ce dossier puis envoyez votre archive comprimée par e-mail à votre professeur. 
 
 ### Microsoft Word
 
-Microsoft Office est la suite de bureautique la plus utilisée dans l'industrie, que vous la détestiez ou l'adoreriez, vous serez inévitablement amené à l'utiliser dans l'industrie. À cette fin, il vous est demandé de rendre un compte rendu Microsoft Word respectant les étapes suivantes :
+Microsoft Office est la suite de bureautique la plus utilisée dans l'industrie, que vous la détestiez ou l'adoreriez, vous serez inévitablement amené à l'utiliser dans votre future carrière professionnelle. À cette fin, il vous est demandé de rédiger un compte rendu Microsoft Word respectant les étapes suivantes :
 
 1. Démarrer Microsoft Word avec `<WIN>+<R> winword <ENTER>`.
 2. Créez un nouveau document.
 3. Cherchez le menu `Styles` et sélectionnez `Titre` et entrez `Rapport de laboratoire`.
 4. Sélectionnez `Sous-titre` et entrez `Laboratoire 00: Familiarisation avec l'ordinteur`.
-5. Constatez que la faute d'orthographe se souligne en rouge.
+5. Constatez que la faute d'orthographe se souligne en rouge (ordinateur ne s'écrit pas ordinteur).
 6. Utiliser un clic-droit sur la faute pour la corriger.
 7. Entrez ensuite votre nom, prénom et la date du jour.
 8. Insérez une section avec `<CTRL>+<ALT>+<1>` intitulée `Microsoft Word`.
@@ -123,7 +131,6 @@ Microsoft Office est la suite de bureautique la plus utilisée dans l'industrie,
 
 10. Gardez votre document ouvert pour la suite des opérations.
 11. ... Une fois toutes les autres étapes terminées, sauvegardez votre rapport dans votre dossier de rendu.
-
 
 ### Notepad
 
@@ -170,7 +177,8 @@ Commencez pas collecter quelques informations liées à cette calculatrice :
    2. modes de calculatrice.
 4. Rendez-vous sur [Microsoft/calculator](https://github.com/Microsoft/calculator).
    1. Constatez qu'il s'agit du code source de votre calculatrice.
-   2. Cliquez sur `Issues` (traduisible par *Problèmes*) et constatez la liste des bogues ouverts.
+   2. Cliquez sur *Issues* (traduisible par *Problèmes*) et constatez la liste des bogues ouverts.
+   3. Que concernait l'*issue* `#504` ?
 
 À présent, effectuez les opérations suivantes et reportez vos observations dans votre rapport.
 
@@ -214,11 +222,11 @@ La HEIG-VD dispose de stations de travail à chaque étage permettant l'impressi
 
 Si vous êtes perdu, ne levez pas tout de suite la main, chercher sur internet par exemple "Comment redimensionner une photo sous Windows 10". Le but de ce laboratoire et aussi de vous inciter à être autonome.
 
-## Installation des outils
+## Installation des outils de développement
 
 Il vous est proposé d'installer quelques outils qui vous serons utiles pour la suite de votre Bachelor et peut-être même votre Master, et peut-être même plus tard lorsque vous serez dans l'industrie.
 
-- **WSL2** : un système Linux pour Windows 10
+- **WSL2** : un système Linux pour Windows 10, permettant d'être compatible POSIX
 - **Git** : un logiciel de gestion de version logiciel
 - **Visual Studio Code** : un éditeur de code
 - **Python** : un langage de programmation utile au quotidien
@@ -244,7 +252,7 @@ Cet éditeur a été choisi pour ce cours car il est très complet, assez léger
 
 1. Installer Visual Studio Code depuis Chocolatey avec `choco install vscode`
 2. Exécutez Visual Studio Code
-3. Avec le racourci `<CTRL>+<K> <CTRL>+<O>`, ouvrez votre dossier de rendu:
+3. Avec le racourci `<CTRL>+<K> <CTRL>+<O>`, ouvrez votre dossier de rendu :
    1. sur la gauche de la fenêtre vous avez la liste des fichiers de votre dossier.
 4. Ouvrez le fichier `hello.c` que nous avons écris plus haut.
 
