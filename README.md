@@ -1,6 +1,7 @@
 # Prise en main de l'ordinateur
 
 **Durée: 2x45 minutes + travail à la maison**
+
 **Rendu: au plus tard 6 jours après le début du laboratoire, avant minuit**
 
 <!-- TOC -->
