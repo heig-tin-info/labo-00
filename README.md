@@ -16,11 +16,11 @@
     - [Calculatrice Windows](#calculatrice-windows)
   - [Informatique à la HEIG-VD](#informatique-à-la-heig-vd)
     - [Imprimante](#imprimante)
-  - [Installation des outils](#installation-des-outils)
+  - [Installation des outils de développement](#installation-des-outils-de-développement)
     - [Chocolatey](#chocolatey)
     - [Visual Studio Code](#visual-studio-code)
-    - [Windows Terminal](#windows-terminal)
     - [WSL](#wsl)
+    - [Windows Terminal](#windows-terminal)
     - [Familiarisation avec Linux](#familiarisation-avec-linux)
     - [Git](#git)
       - [Configuration de Git](#configuration-de-git)
@@ -82,6 +82,8 @@ Voici deux séquences de touches, que font-elles ?
 
 Exécutez `%userprofile%` depuis le menu *exécuter* (`<W-E>`), l'explorateur de fichiers s'ouvre. Quel est ce dossier ? Si vous ne savez pas, cherchez une référence utile sur internet et intégrez là à votre rapport.
 
+![run](assets/run.png)
+
 Soyez succint, votre rapport doit être précis et ne mentionner que l'essentiel.
 
 Répondez à ces questions dans votre rapport :
@@ -135,6 +137,8 @@ Microsoft Office est la suite de bureautique la plus utilisée dans l'industrie,
 ### Notepad
 
 Notepad est un éditeur de texte très moyenâgeux, mais diantrement utile.
+
+![notepad](assets/nodepad.png)
 
 1. Ouvrez l'éditeur de texte `notepad` depuis `<WIN>+<R> notepad <ENTER>`
 2. Saississez le programme C suivant (sans oublier de changer le nom de l'auteur...) :
@@ -256,16 +260,9 @@ Cet éditeur a été choisi pour ce cours car il est très complet, assez léger
    1. sur la gauche de la fenêtre vous avez la liste des fichiers de votre dossier.
 4. Ouvrez le fichier `hello.c` que nous avons écris plus haut.
 
-### Windows Terminal
-
-Le programme `cmd.exe` est certainement plus vieux que vous et depuis Microsoft à développé un nouveau terminal nommé **Windows Terminal**. Pour l'installer vous avez deux solutions :
-
-1. Utiliser le **Windows Store**
-2. Utiliser Chocolatey avec `choco install microsoft-windows-terminal`
-
 ### WSL
 
-Windows Subsystem for Linux est une couche de compatibilité pour Windows permettant de faire tourner un vrai système Linux sur votre ordinateur Windows. Si vous avez peur de la ligne de commande, n'ayez crainte, nous allons avidement l'utiliser durant ce cours.
+[Windows Subsystem for Linux](https://en.wikipedia.org/wiki/Windows_Subsystem_for_Linux) est une couche de compatibilité pour Windows permettant de faire tourner un vrai système Linux sur votre ordinateur Windows. Si vous avez peur de la ligne de commande, n'ayez crainte, nous allons avidement l'utiliser durant ce cours.
 
 **WSL** permet de simplifier le développement de nombreux logiciels prévu pour être compatible POSIX (comme les téléphones Android). Installer WSL vous permettra de suivre quelques exemples cités dans le cours plus simplement que sous Windows.
 
@@ -281,6 +278,15 @@ Et voici la seconde :
 
 1. `choco install wsl2` si vous avez mis à jour votre Windows en version 2004 (recommandé). Sinon `choco install wsl`.
 2. `choco install wsl-ubuntu-2004`
+
+### Windows Terminal
+
+Le programme `cmd.exe` est plus vieux que vous et depuis Microsoft à développé un nouveau terminal nommé **Windows Terminal**. Pour l'installer vous avez deux solutions :
+
+![wt](assets/wt.png)
+
+1. Utiliser le **Windows Store**
+2. Utiliser Chocolatey avec `choco install microsoft-windows-terminal`
 
 ### Familiarisation avec Linux
 
@@ -343,7 +349,7 @@ Git est un logiciel de gestion de version très utilisé chez les développeurs.
 
 #### Configuration de Git
 
-Git utilise deux informations pour vous identifier : votre nom et votre e-mail. Pour configurer votre identité, exécutez depuis un terminal Ubuntu les commandes suivantes en remplacant ce très cher Emmet par votre humble patronyme :
+[Git](https://git-scm.com/) utilise deux informations pour vous identifier : votre nom et votre e-mail. Pour configurer votre identité, exécutez depuis un terminal Ubuntu les commandes suivantes en remplacant ce très cher Emmet par votre humble patronyme :
 
    ```sh
    git config --global user.name "Emmet Lathrop Brown"
