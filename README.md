@@ -1,8 +1,7 @@
 # Prise en main de l'ordinateur
 
 **Durée: 2x45 minutes + travail à la maison**
-
-**Rendu: au plus tard 6 jours après le début du laboratoire, avant minuit**
+**Rendu: dimanche, avant minuit**
 
 <!-- TOC -->
 
@@ -25,7 +24,7 @@
     - [Git](#git)
       - [Configuration de Git](#configuration-de-git)
       - [Identité SSH](#identité-ssh)
-      - [Clé de signature GPG (optionnel)](#clé-de-signature-gpg-optionnel)
+      - [Clé de signature GPG (optionnel, si vous avez le temps)](#clé-de-signature-gpg-optionnel-si-vous-avez-le-temps)
   - [GitHub](#github)
     - [Création d'un compte](#création-dun-compte)
     - [Déployement des clés](#déployement-des-clés)
@@ -40,7 +39,7 @@
 
 ## Introduction
 
-Ce travail pratique permet à l'étudiant la prise en main avec Microsoft Windows et les outils qui seront utilisés durant le semestre. Le cours étant essentiellement axé ligne de commande, il est naturel de s'orienter davantage sur un environnement de travail en ligne de commande. Depuis 2016 Microsoft propose un produit nommé **Windows Subsystem for Linux**. Il s'agit d'une distribution Linux tournant dans Windows. 
+Ce travail pratique permet à l'étudiant la prise en main avec Microsoft Windows et les outils qui seront utilisés durant le semestre. Le cours étant essentiellement axé ligne de commande, il est naturel de s'orienter davantage sur un environnement de travail en ligne de commande. Depuis 2016 Microsoft propose un produit nommé **Windows Subsystem for Linux**. Il s'agit d'une distribution Linux tournant dans Windows.
 
 C'est cet outil qui sera proposé pour le semestre. Les utilisateurs de macOS et de Linux devraient pouvoir s'adapter facilement.
 
@@ -89,7 +88,7 @@ Soyez succint, votre rapport doit être précis et ne mentionner que l'essentiel
 Répondez à ces questions dans votre rapport :
 
 - C'est quoi POSIX ?
-- Quel est le raccourcis Windows pour exécuter rapidement un programme ? 
+- Quel est le raccourcis Windows pour exécuter rapidement un programme ?
 - Quel est le raccourcis Windows pour vérouiller l'ordinateur ?
 
 ## Rendu du laboratoire
@@ -113,7 +112,7 @@ Durant ce travail pratique, plusieurs documents seront à rendre. Pour se prépa
 └── two-pies.txt
 ```
 
-Un fois le travail terminé (notez bien ce point, car ce sera le dernier à faire avant le rendu du laboratoire) : crééez une archive [compressée](https://www.google.com/search?q=windows+how+to+compress+folder) de ce dossier puis envoyez votre archive comprimée par e-mail à votre professeur. 
+Un fois le travail terminé (notez bien ce point, car ce sera le dernier à faire avant le rendu du laboratoire) : crééez une archive [compressée](https://www.google.com/search?q=windows+how+to+compress+folder) de ce dossier puis envoyez votre archive comprimée par e-mail à votre professeur.
 
 ### Microsoft Word
 
@@ -233,7 +232,6 @@ Il vous est proposé d'installer quelques outils qui vous serons utiles pour la 
 - **WSL2** : un système Linux pour Windows 10, permettant d'être compatible POSIX
 - **Git** : un logiciel de gestion de version logiciel
 - **Visual Studio Code** : un éditeur de code
-- **Python** : un langage de programmation utile au quotidien
 
 ### Chocolatey
 
@@ -241,12 +239,8 @@ Chocolatey est un gestionnaire de paquets pour Windows, une solution simplifiée
 
 1. Rendez-vous sur [chocolatey.org](https://chocolatey.org/).
 2. Installer Chocolatey sur votre ordinateur
-3. Rechercher le logiciel `HxD - Hex Editor and Disk Editor`
-4. Notez dans votre rapport:
-   1. combien de fois ce logiciel a été téléchargé,
-   2. la date de sa dernière mise à jour,
-   3. vérifier si ce packet est un *trusted package* et expliquer ce que cela signifie dans votre rapport.
-5. Installez ce logiciel si vous le souhaitez.
+
+N'oubliez pas d'élever les privilèges de la fenêtre PowerShell pour permettre à chocolatey de s'installer sur votre ordinateur !
 
 ### Visual Studio Code
 
@@ -342,7 +336,6 @@ Ce que vous devez retenir c'est que:
 - Pour consulter l'aide d'un programme, utilisez le programme `man` qui affiche le manuel d'un programme.
 - L'appel des programmes peut être modifié avec des options comme `-d`.
 
-
 ### Git
 
 Git est un logiciel de gestion de version très utilisé chez les développeurs. Il est utilisé dans ce cours comme outil principal pour accéder aux énnoncés de laboratoire et soumettre vos modifications. Vous avez la possibilité d'installer ce programme soit sous Windows `choco install git`, soit sous Linux. Avantageusement, Git est déjà installé avec Ubuntu 20.04, mais nous devons le configurer.
@@ -417,7 +410,7 @@ Vous devriez obtenir un texte étrange avec plein de chiffres et de lettres de `
 
 Maintenant, si vous voulez impressionner votre professeur et gagner des points supplémentaires, mettez dans votre rapport le contenu de votre clé privée accessible depuis `cat ~/.ssh/id_rsa`.
 
-#### Clé de signature GPG (optionnel)
+#### Clé de signature GPG (optionnel, si vous avez le temps)
 
 Ce point est optionnel mais par soucis de cohérence avec des besoins de sécurité que vous rencontrerez peut-être en industrie, il vous est possible de générer une autre clé. Celle-ci permet de signer numériquement des documents et ainsi attester que c'est bien vous. Ce système de signature numérique est basé sur l'algorithme [RSA](https://fr.wikipedia.org/wiki/Chiffrement_RSA) inventé en partie par Ronald Rivest, un homme possédant un sourire bien étrange.
 
@@ -547,6 +540,7 @@ Bravo, vous venez de terminer ce premier travail pratique. Durant toute la proc�
 - Créer un compte sur GitHub
 - Créer une clé SSH et éventuellement GPG
 - Installer Microsoft Visual Studio Code (VsCode)
-- Vu que la Calculatrice Windows est open-source et qu'elle renferme de nombreuses fonctionnalités intéressantes
+- Utilisé la calculatrice Windows et fait une conversion en chevaux vapeurs
+- Découvert que la calculatrice Windows est open-source
 - Exécuter des programmes sous Linux comme `cowsay`
 - Installer un gestionnaire de paquets pour Windows nommé Chocolatey
