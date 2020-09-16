@@ -1,7 +1,8 @@
 # Prise en main de l'ordinateur
 
 **Durée: 2x45 minutes + travail à la maison**
-**Rendu: dimanche, avant minuit**
+
+**Rendu: dimanche soir avant minuit**
 
 <!-- TOC -->
 
@@ -39,40 +40,41 @@
 
 ## Introduction
 
-Ce travail pratique permet à l'étudiant la prise en main avec Microsoft Windows et les outils qui seront utilisés durant le semestre. Le cours étant essentiellement axé ligne de commande, il est naturel de s'orienter davantage sur un environnement de travail en ligne de commande. Depuis 2016 Microsoft propose un produit nommé **Windows Subsystem for Linux**. Il s'agit d'une distribution Linux tournant dans Windows.
+Ce travail pratique permet à l'étudiant la prise en main avec Microsoft Windows et les outils qui seront utilisés durant le semestre. Le cours étant essentiellement axé ligne de commande, il est plus naturel de s'orienter davantage sur un environnement de travail en ligne de commande. Depuis 2016 Microsoft propose un produit nommé **Windows Subsystem for Linux**. Il s'agit d'une distribution Linux tournant dans Windows. 
 
-C'est cet outil qui sera proposé pour le semestre. Les utilisateurs de macOS et de Linux devraient pouvoir s'adapter facilement.
+C'est cet outil qui sera proposé pour le semestre. Les utilisateurs de macOS et de Linux n'auront pas besoin de cet outil et pourront développer sans machine virtuelle Windows.
 
-Linux, macOS ou Windows sont des systèmes d'exploitations qui offrent une interface utilisateur (graphique et en ligne de commande), permettant d'exécuter des programmes, de se connecter à des réseaux informatique. Linux, UNIX et macOS sont des systèmes dit **POSIX**, c'est à dire qu'ils respectent tous une norme bien précise sur le fonctionnement du système d'exploitation. Cette norme étant très appréciée, elle est utilisée dans beaucoup de systèmes : centres de calculs, serveur web, serveurs de fichiers, satellites, Tesla, fusées spatiales, téléphones mobiles (Android et iPhone) et d'autres. Le système d'exploitation Windows est quant à lui très apprécié pour les travaux de bureautiques et les terminaux graphiques. Beaucoup de développeurs utilisent aujourd'hui Windows coinjointement avec Linux.
+Linux, macOS ou Windows sont des systèmes d'exploitations qui offrent une interface utilisateur (graphique et en ligne de commande), permettant d'exécuter des programmes, de se connecter à des réseaux informatique. 
 
-Ce cours d'introduction au C, s'appuyera sur cette philosophie.
+Linux et macOS sont des systèmes dit **POSIX**, c'est à dire qu'ils respectent tous une norme bien précise sur le fonctionnement du système d'exploitation. Cette norme étant très appréciée, elle est utilisée dans beaucoup de systèmes : centres de calculs, serveur web, serveurs de fichiers, satellites, voitures Tesla, fusées spatiales, téléphones mobiles (Android et iPhone) et bien d'autres. 
+
+Le système d'exploitation Windows est quant à lui très apprécié pour les travaux de bureautiques et les terminaux graphiques. Beaucoup de développeurs utilisent aujourd'hui Windows coinjointement avec Linux, c'est ce que nous allons faire durant ce semestre dans ce cours d'introduction à la programmation en C.
 
 ## Objectifs
 
-- Familiarisation avec la structure IT de la HEIG-VD
+Les objectifs de ce travail pratique sont les suivants :
+
+- Familiarisation avec la structure informatique de la HEIG-VD
 - Savoir lire un intitué de laboratoire (oui, oui c'est pas si facile)
 - Appliquer la marche à suivre pour obtenir et rendre un travail pratique
-- Découverte et installation des outils utiles pour ce cours
+- Découvrir et installer les outils de développement utiles pour ce cours
 
 ## Prise en main de votre ordinateur
 
 Démarrez votre PC et connectez-vous au réseau de l'école en utilisant vos identifiants personnels [AAI](https://aai-admin.hes-so.ch). Votre login est votre prénom et votre nom séparé par un point. Votre nom de famille pourrait être tronqué si l'ensemble dépasse 13 caractères. Votre mot de passe c'est... bah votre mot de passe... Il se pourrait que vous deviez préfixer votre login par le nom du domaine informatique de l'école (`einet.ad.eivd.ch`) ou simplement `einet`. Ainsi vous pourriez avoir quelque chose comme : `einet\yves.chevalli`.
 
-Une fois connecté sur votre ordinateur, expérimentez :
+Une fois connecté sur votre ordinateur, expérimentez les points suivants :
 
-- Un bref appui sur la **touche Windows** positionnée sur le clavier à gauche de la barre d'espace et entre `<CTRL>` et `<ALT>` :
-  - ouvre le menu **démarrer** duquel vous accédez à vos programmes.
-  - Une frappe au clavier alors que le menu est ouvert vous permet la recherche de programmes
+- Un bref appui sur la **touche Windows** positionnée sur le clavier à gauche de la barre d'espace et entre `<CTRL>` et `<ALT>` ouvre le menu **démarrer** duquel vous accédez à vos programmes.
+- Une frappe au clavier alors que le menu Démarrer est ouvert vous permet la recherche de programmes
 - La combinaison de touches `<WIN>`+`<R>` fait apparaître le menu **exécuter**.
-  - L'invité de dialogue vous permet d'entrer un nom de programme.
+- L'invité de dialogue du menu exécuter vous permet d'entrer un nom de programme.
 - La combinaison de touches `<WIN>`+`<E>` fait apparaître l'explorateur de fichiers.
-  - Il permet de naviguer dans votre arborescence et d'accéder à vos documents.
 - La combinaison de touches `<WIN>`+`<L>` vérouille votre ordinateur.
-  - Il est important de toujours vérouiller votre ordinateur lorsque vous vous absentez.
 
-Notez qu'une séquence au clavier peut être exprimée comme une suite de combinaisons de touches. Les chevrons `<>` seront utilisés pour différentier un ou des caractères d'une touche du clavier. Par exemple, la touche de tabulation (↹) sera indiquée `<TAB>` alors que `TAB` correspondra à la frappe des trois caractères `T`, `A` et `B`. Lorsque des touches sont séparées par le signe `+` il s'agit alors d'une combinaison de touches. C'est à dire le maintien simultané des touches concernées. Dès lors `<CTRL>`+`<R>` correspond à maintenir la touche **contrôle** pendant que la touche `R` est appuyée. Sur internet et dans de nombreuses documentations, cette notation est souvent abrégée et ce même raccourci pourrait s'écrire `<C-R>`. À vous d'interprêter convenablement ces écritures selon le contexte.
+>Pour plus de rigueur, nous définission ici comment sont notés les raccourcis claviers : une séquence au clavier peut être exprimée comme une suite de combinaisons de touches. Les chevrons `<>` sont ici utilisés pour différentier un ou des caractères d'une touche du clavier. Par exemple, la touche de tabulation (↹) sera indiquée `<TAB>` alors que `TAB` correspondra à la frappe des trois caractères sur le clavier : `T`, `A` et `B`. Lorsque des touches sont séparées par le signe `+` il s'agit alors d'une combinaison de touches. C'est-à -dire le maintien simultané des touches concernées. Dès lors `<CTRL>`+`<R>` correspond à maintenir la touche **contrôle** pendant que la touche `R` est appuyée. Sur internet et dans de nombreuses documentations, cette notation est souvent abrégée et ce même raccourci peut s'écrire `<C-R>`. À vous d'interprêter convenablement ces écritures selon le contexte.
 
-Voici deux séquences de touches, que font-elles ?
+Avez-vous compris ? Voici deux séquences de touches, que font-elles ?
 
 ```text
 <WIN>+<R> calc <ENTER> <ALT>+<1> <ESC> 3.14 * 2 = <CTRL>+<C> <ALT>+<F4>
@@ -85,10 +87,10 @@ Exécutez `%userprofile%` depuis le menu *exécuter* (`<W-E>`), l'explorateur de
 
 Soyez succint, votre rapport doit être précis et ne mentionner que l'essentiel.
 
-Répondez à ces questions dans votre rapport :
+Répondez à ces questions succintement dans votre rapport :
 
 - C'est quoi POSIX ?
-- Quel est le raccourcis Windows pour exécuter rapidement un programme ?
+- Quel est le raccourcis Windows pour exécuter rapidement un programme ? 
 - Quel est le raccourcis Windows pour vérouiller l'ordinateur ?
 
 ## Rendu du laboratoire
@@ -107,16 +109,15 @@ Durant ce travail pratique, plusieurs documents seront à rendre. Pour se prépa
 ├── avion.png
 ├── hello
 ├── hello.c
-├── hello.exe
 ├── rapport.docx
 └── two-pies.txt
 ```
 
-Un fois le travail terminé (notez bien ce point, car ce sera le dernier à faire avant le rendu du laboratoire) : crééez une archive [compressée](https://www.google.com/search?q=windows+how+to+compress+folder) de ce dossier puis envoyez votre archive comprimée par e-mail à votre professeur.
+Un fois le travail terminé (notez bien ce point, car ce sera le dernier à faire avant le rendu du laboratoire) : crééez une archive [compressée](https://www.google.com/search?q=windows+how+to+compress+folder) de ce dossier puis envoyez votre archive comprimée par e-mail à votre professeur. 
 
 ### Microsoft Word
 
-Microsoft Office est la suite de bureautique la plus utilisée dans l'industrie, que vous la détestiez ou l'adoreriez, vous serez inévitablement amené à l'utiliser dans votre future carrière professionnelle. À cette fin, il vous est demandé de rédiger un compte rendu Microsoft Word respectant les étapes suivantes :
+Microsoft Office est la suite de bureautique la plus utilisée dans l'industrie, que vous la détestiez ou l'adoreriez, vous serez inévitablement amené à l'utiliser dans votre future carrière professionnelle. À cette fin, il vous est demandé de rédiger un compte rendu Microsoft Word en respectant les étapes suivantes :
 
 1. Démarrer Microsoft Word avec `<WIN>+<R> winword <ENTER>`.
 2. Créez un nouveau document.
@@ -204,13 +205,13 @@ Commencez pas collecter quelques informations liées à cette calculatrice :
       1. Deux valeurs dans la mémoire `0x5F3759DF` et le résultat de la soustraction
       2. Le mode de changement de bits activé.
 
-      ![Calculatrice](assets/calc.png)
+![Calculatrice](assets/calc.png)
 
 ## Informatique à la HEIG-VD
 
 ### Imprimante
 
-La HEIG-VD dispose de stations de travail à chaque étage permettant l'impression et le scan de documents. La technologie **FollowMe** permet de retenir vos impressions jusqu'à ce que vous soyez pret à récupérer vos documents.
+La HEIG-VD dispose de stations d'impression à chaque étage permettant la production et le scan de documents. La technologie **FollowMe** permet de retenir vos impressions jusqu'à ce que vous soyez pret à récupérer vos documents.
 
 1. Chercher dans l'[intranet](http://intra.heig-vd.ch) la documentation sur **FollowMe**.
 2. Installer les deux imprimantes proposées.
@@ -221,38 +222,39 @@ La HEIG-VD dispose de stations de travail à chaque étage permettant l'impressi
 7. Ouvrez la photo avec le programme `Photos`
 8. Redimensionnez l'image à `500x500` pixels
 9. Sauvegardez l'image avec le nom `avion` dans votre dossier de rendu
-10. Offrez votre création à votre professeur (si vous le pouvez)
+10. Offrez votre création à votre professeur (si vous le voulez)
 
 Si vous êtes perdu, ne levez pas tout de suite la main, chercher sur internet par exemple "Comment redimensionner une photo sous Windows 10". Le but de ce laboratoire et aussi de vous inciter à être autonome.
 
 ## Installation des outils de développement
 
-Il vous est proposé d'installer quelques outils qui vous serons utiles pour la suite de votre Bachelor et peut-être même votre Master, et peut-être même plus tard lorsque vous serez dans l'industrie.
+À présent il vous est proposé d'installer quelques outils qui vous serons utiles pour la suite de votre Bachelor et peut-être même votre Master, et peut-être même plus tard lorsque vous serez dans l'industrie.
 
-- **WSL2** : un système Linux pour Windows 10, permettant d'être compatible POSIX
+- **WSL** : un système Linux pour Windows 10, permettant d'être compatible POSIX
 - **Git** : un logiciel de gestion de version logiciel
 - **Visual Studio Code** : un éditeur de code
 
 ### Chocolatey
 
-Chocolatey est un gestionnaire de paquets pour Windows, une solution simplifiée et unifiée pour l'installation de programmes.
+Chocolatey est un gestionnaire de paquets pour Windows, une solution simplifiée et unifiée pour l'installation de programmes. Il peut simplifier l'installation de programmes sous Windows.
 
 1. Rendez-vous sur [chocolatey.org](https://chocolatey.org/).
 2. Installer Chocolatey sur votre ordinateur
-
-N'oubliez pas d'élever les privilèges de la fenêtre PowerShell pour permettre à chocolatey de s'installer sur votre ordinateur !
 
 ### Visual Studio Code
 
 [Visual Studio Code](https://code.visualstudio.com/) est un éditeur de code extensible développé par [Microsoft](https://fr.wikipedia.org/wiki/Microsoft) pour Windows, Linux et macOS. Il est un bon point de départ pour programmer dans différents langages (C, C++, Python, JavaScript, Perl, Java...).
 
-Cet éditeur a été choisi pour ce cours car il est très complet, assez léger et surtout, il fonctionne très bien avec WSL et sous macOS.
+Cet éditeur a été choisi pour ce cours car il est très complet, assez léger et surtout, il fonctionne très bien avec WSL sous macOS et naturellement sous Linux.
 
 1. Installer Visual Studio Code depuis Chocolatey avec `choco install vscode`
 2. Exécutez Visual Studio Code
 3. Avec le racourci `<CTRL>+<K> <CTRL>+<O>`, ouvrez votre dossier de rendu :
    1. sur la gauche de la fenêtre vous avez la liste des fichiers de votre dossier.
 4. Ouvrez le fichier `hello.c` que nous avons écris plus haut.
+5. Notez que cette fois-ci vous avez des couleurs.
+6. Avec `<CTRL>+<SHIFT>+<P>` faites apparaître le menu de commande et cherchez `Preferences: Color Theme` et choisissez un thème qui vous convient.
+7. Faites une capture d'écran et intégrez là dans votre rapport.
 
 ### WSL
 
@@ -260,18 +262,21 @@ Cet éditeur a été choisi pour ce cours car il est très complet, assez léger
 
 **WSL** permet de simplifier le développement de nombreux logiciels prévu pour être compatible POSIX (comme les téléphones Android). Installer WSL vous permettra de suivre quelques exemples cités dans le cours plus simplement que sous Windows.
 
-Une fois de plus vous avez plusieurs solutions. Voici la première :
+Pour installer ce système, vous avez plusieurs solutions ; voici la première :
 
 1. Utilisez la [documentation](https://docs.microsoft.com/en-us/windows/wsl/install-win10) de Microsoft pour installer WSL
 2. Choisissez votre distribution préférées. À défaut, optez pour **Ubuntu 20-04**.
 3. Une fois l'installation terminée n'oubliez pas d'[initialiser](https://docs.microsoft.com/en-us/windows/wsl/initialize-distro) votre distribution.
-4. Sur votre bureau, exécutez l'icône avec le manchot [Tux](https://fr.wikipedia.org/wiki/Tux) nommée `WSL Terminal`
-5. Mettez à jour votre distribution avec la commande `sudo apt update && sudo apt upgrade`
 
 Et voici la seconde :
 
 1. `choco install wsl2` si vous avez mis à jour votre Windows en version 2004 (recommandé). Sinon `choco install wsl`.
 2. `choco install wsl-ubuntu-2004`
+
+Une fois WSL et Ubuntu installés effectuer les opérations suivantes :
+
+1. Exécutez le programme `Ubuntu` maintenant installé
+2. Après quelques instants, il vous est demandé de saisir un mot de passe, choisissez un mot de passe assez simple, il n'est pas très important.
 
 ### Windows Terminal
 
@@ -282,9 +287,13 @@ Le programme `cmd.exe` est plus vieux que vous et depuis Microsoft à développ�
 1. Utiliser le **Windows Store**
 2. Utiliser Chocolatey avec `choco install microsoft-windows-terminal`
 
+Pour exécuter ce programme, vous pouvez simplement faire `<W-R> wt <ENTER>`. 
+
 ### Familiarisation avec Linux
 
-Pour se familiariser avec les exécutables Linux essayons d'installer un programme. Tout d'abord vous devez lancer un terminal. Exécutez Windows Terminal puis depuis le menu déroulant sélectionnez `Ubuntu`. Depuis l'invité de commande qui s'offre à vous :
+Pour se familiariser avec les exécutables Linux essayons d'installer un programme. Tout d'abord vous devez lancer un terminal. Exécutez Windows Terminal puis depuis le menu déroulant `v` juste à droite du `+` sélectionnez `Ubuntu`. 
+
+Depuis l'invité de commande qui s'offre à vous :
 
 1. Mettre à jour la liste des logiciels disponibles avec `sudo apt-get update`
 2. Installer le programme `cowsay` (vache qui parle) avec `sudo apt-get install cowsay`
@@ -338,11 +347,11 @@ Ce que vous devez retenir c'est que:
 
 ### Git
 
-Git est un logiciel de gestion de version très utilisé chez les développeurs. Il est utilisé dans ce cours comme outil principal pour accéder aux énnoncés de laboratoire et soumettre vos modifications. Vous avez la possibilité d'installer ce programme soit sous Windows `choco install git`, soit sous Linux. Avantageusement, Git est déjà installé avec Ubuntu 20.04, mais nous devons le configurer.
+Git est un logiciel de gestion de version très utilisé par les développeurs logiciels. Il est utilisé dans ce cours comme outil principal pour accéder aux énnoncés de laboratoire et soumettre vos modifications. Avantageusement, Git est déjà installé avec Ubuntu 20.04, mais nous devons le configurer avant de pouvoir l'utiliser.
 
 #### Configuration de Git
 
-[Git](https://git-scm.com/) utilise deux informations pour vous identifier : votre nom et votre e-mail. Pour configurer votre identité, exécutez depuis un terminal Ubuntu les commandes suivantes en remplacant ce très cher Emmet par votre humble patronyme :
+[Git](https://git-scm.com/) utilise deux informations pour vous identifier : votre nom et votre e-mail. Pour configurer votre identité, exécutez depuis un terminal Ubuntu puis les commandes suivantes en remplacant ce très cher `Emmet` par votre humble patronyme :
 
    ```sh
    git config --global user.name "Emmet Lathrop Brown"
@@ -356,6 +365,8 @@ Notez au passage la structure de ces commandes :
 3. `--global` il s'agit d'un modificateur reconnaissable à ses deux tirets, qui indique que nous souhaitons modifier la configuration globalement dans tout Ubuntu
 4. `user.name` c'est le paramètre de configuration que vous voulez modifier
 5. `"Emmet Lathrop Brown"` c'est une chaîne de caractère comportant le prénom suivi du nom.
+
+> Chacun des éléments passés après le nom du programme sont nommé des **arguments**, et les arguments qui commencent par un tiret simple ou double sont nommés des **options**.
 
 #### Identité SSH
 
@@ -408,7 +419,7 @@ cat ~/.ssh/id_rsa.pub
 
 Vous devriez obtenir un texte étrange avec plein de chiffres et de lettres de `a` à `f` et commençant par `ssh-rsa`. Copiez ce texte et insérez le dans votre rapport.
 
-Maintenant, si vous voulez impressionner votre professeur et gagner des points supplémentaires, mettez dans votre rapport le contenu de votre clé privée accessible depuis `cat ~/.ssh/id_rsa`.
+Maintenant, si vous voulez *impressionner votre professeur et gagner des points supplémentaires*, mettez dans votre rapport le contenu de votre clé privée accessible depuis `cat ~/.ssh/id_rsa`.
 
 #### Clé de signature GPG (optionnel, si vous avez le temps)
 
@@ -449,7 +460,7 @@ Avant toute chose, et si ce n'est pas déjà fait, il vous faut créer un compte
 
 1. Allez sur [GitHub](https://github.com/)
 2. Sélectionnez `Sign Up` et créer un compte GitHub.
-3. Choisissez un `username` à votre convenance. Pour simplifier le travail du professeur, utilisez `prenom-nom` en **minuscule** et avec un tiret. De plus, c'est la convention d'usage que de nommer en minuscule, les mots séparés par des tirets (On appel ça le kebab-case).
+3. Choisissez un `username` à votre convenance. Pour simplifier le travail du professeur, utilisez `prenom-nom` en **minuscule** et avec un tiret. De plus, c'est la convention d'usage de nommer en minuscule les mots séparés par des tirets (On appel ça le kebab-case à l'image de mots en prise sur une pique de fer).
 4. Utilisez (dans la mesure du possible) votre e-mail de la HEIG-VD afin de bénécifier des avantages du Campus Program.
 
 ### Déployement des clés
@@ -494,18 +505,16 @@ Votre clé SSH vous permet aussi d'accéder à d'autres ordinateurs à distance 
 ### Découvertes des fonctionnalités de GitHub
 
 1. Rendez-vous sur le fichier [addrman.cpp](https://github.com/bitcoin/bitcoin/blob/d0f81a96d9c158a9226dc946bdd61d48c4d42959/src/addrman.cpp) du code source des Bitcoin
-2. Cherchez s'il y a une [Delorean](https://fr.wikipedia.org/wiki/DeLorean_DMC-12) dane le fichier
-3. Cherchez qui a ajouté cette ligne de code
+2. Cherchez s'il y a une [Delorean](https://fr.wikipedia.org/wiki/DeLorean_DMC-12) dans le fichier
 4. Cliquez sur le numéro de la ligne incriminée
 5. Cliquez sur les trois petits points
 6. Sélectionner *View git blame*
-7. Cliquez l'avatar de la personne concernée par ce changement
-8. Ajouter à votre rapport
-9. Le nombre de contributions dans l'année.
-10. Le nombre de référentiels publics.
-11. Le nombre de *followers*.
-12. Cliquez sur le titre du *commit* (texte à côté de l'avatar)
-13. Notez dans votre rapport
+7. Cliquez l'avatar de la personne concernée par ce changement et notez dans votre rapport quelques informations sur ce personnage :
+    1. Le nombre de contributions dans l'année (Contributions).
+    2. Le nombre de référentiels publics (Repositories).
+    3. Le nombre de *followers*.
+8. Revenez en arrière et cliquez sur le titre du *commit* (texte à côté de l'avatar `Apply clang-format on...`)
+9. Notez dans votre rapport
     1. La date du changement
     2. Le *hash* du commit (qui est quelque chose comme `e91846ca1c1c57011e57491013f9bd...`)
     3. Le nombre de fichiers changés
@@ -517,8 +526,8 @@ Expliquez dans votre rapport ce que vous avez compris de cette fonctionnalité `
 
 Par la suite, les énnoncés des travaux pratiques seront accompagnés de code source à compléter. Les référentiels de code seront disponibles sur GitHub. Le rendu du travail consistera à publier vos changements sur GitHub.
 
-1. Lancer Ubuntu
-2. Cloner le référentiel de ce travail pratique avec la commande:
+1. Lancer un terminal Ubuntu
+2. Cloner le référentiel de ce travail pratique avec la commande suivante :
 
    ```sh
    git clone git@github.com:heig-vd-tin/info1-labo-00.git
@@ -540,7 +549,6 @@ Bravo, vous venez de terminer ce premier travail pratique. Durant toute la proc�
 - Créer un compte sur GitHub
 - Créer une clé SSH et éventuellement GPG
 - Installer Microsoft Visual Studio Code (VsCode)
-- Utilisé la calculatrice Windows et fait une conversion en chevaux vapeurs
-- Découvert que la calculatrice Windows est open-source
+- Vu que la Calculatrice Windows est open-source et qu'elle renferme de nombreuses fonctionnalités intéressantes
 - Exécuter des programmes sous Linux comme `cowsay`
 - Installer un gestionnaire de paquets pour Windows nommé Chocolatey
