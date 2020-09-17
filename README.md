@@ -193,7 +193,7 @@ Commencez pas collecter quelques informations liées à cette calculatrice :
    2. Capturez la fenêtre de la calculatrice avec `<ALT>+<PRINT SCREEN>`.
    3. Insérer la capture dans votre rapport.
 3. Entrez en mode programmeur
-   1. Saisir en hexadécimal (HEX) la valeur `0x5F3759DF`
+   1. Saisir en hexadécimal (HEX) la valeur `5F3759DF`
    2. Le sauver dans la mémoire (MS)
    3. Entrez en mode d'édition des bits
       1. Commutez les bits 0, 8, 16 et 23
