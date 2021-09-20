@@ -4,49 +4,17 @@
 
 **Rendu: dimanche soir avant minuit**
 
-<!-- TOC -->
-
-- [Prise en main de l'ordinateur](#prise-en-main-de-lordinateur)
-  - [Introduction](#introduction)
-  - [Objectifs](#objectifs)
-  - [Prise en main de votre ordinateur](#prise-en-main-de-votre-ordinateur)
-  - [Rendu du laboratoire](#rendu-du-laboratoire)
-    - [Microsoft Word](#microsoft-word)
-    - [Notepad](#notepad)
-    - [Calculatrice Windows](#calculatrice-windows)
-  - [Informatique à la HEIG-VD](#informatique-à-la-heig-vd)
-    - [Imprimante](#imprimante)
-  - [Installation des outils de développement](#installation-des-outils-de-développement)
-    - [Chocolatey](#chocolatey)
-    - [Visual Studio Code](#visual-studio-code)
-    - [WSL](#wsl)
-    - [Windows Terminal](#windows-terminal)
-    - [Familiarisation avec Linux](#familiarisation-avec-linux)
-    - [Git](#git)
-      - [Configuration de Git](#configuration-de-git)
-      - [Identité SSH](#identité-ssh)
-      - [Clé de signature GPG (optionnel, si vous avez le temps)](#clé-de-signature-gpg-optionnel-si-vous-avez-le-temps)
-  - [GitHub](#github)
-    - [Création d'un compte](#création-dun-compte)
-    - [Déployement des clés](#déployement-des-clés)
-      - [Déloyement de votre clé publique](#déloyement-de-votre-clé-publique)
-      - [Deployement de votre clé GPG (optionnel)](#deployement-de-votre-clé-gpg-optionnel)
-      - [Précisions sur toutes ces clés](#précisions-sur-toutes-ces-clés)
-    - [Découvertes des fonctionnalités de GitHub](#découvertes-des-fonctionnalités-de-github)
-    - [Clone du laboratoire](#clone-du-laboratoire)
-  - [Résumé](#résumé)
-
-<!-- /TOC -->
+<!-- TOC -->autoauto- [Prise en main de l'ordinateur](#prise-en-main-de-lordinateur)auto    - [Introduction](#introduction)auto    - [Objectifs](#objectifs)auto    - [Prise en main de votre ordinateur](#prise-en-main-de-votre-ordinateur)auto    - [Rendu du laboratoire](#rendu-du-laboratoire)auto        - [Microsoft Word](#microsoft-word)auto        - [Notepad](#notepad)auto        - [Calculatrice Windows](#calculatrice-windows)auto    - [Informatique à la HEIG-VD](#informatique-à-la-heig-vd)auto        - [Imprimante](#imprimante)auto    - [Installation des outils de développement](#installation-des-outils-de-développement)auto        - [Chocolatey](#chocolatey)auto        - [Visual Studio Code](#visual-studio-code)auto        - [WSL](#wsl)auto        - [Windows Terminal](#windows-terminal)auto        - [Familiarisation avec Linux](#familiarisation-avec-linux)auto        - [Git](#git)auto            - [Configuration de Git](#configuration-de-git)auto            - [Identité SSH](#identité-ssh)auto            - [Clé de signature GPG (optionnel, si vous avez le temps)](#clé-de-signature-gpg-optionnel-si-vous-avez-le-temps)auto    - [GitHub](#github)auto        - [Création d'un compte](#création-dun-compte)auto        - [Déployement des clés](#déployement-des-clés)auto            - [Déloyement de votre clé publique](#déloyement-de-votre-clé-publique)auto            - [Deployement de votre clé GPG (optionnel)](#deployement-de-votre-clé-gpg-optionnel)auto            - [Précisions sur toutes ces clés](#précisions-sur-toutes-ces-clés)auto        - [Découvertes des fonctionnalités de GitHub](#découvertes-des-fonctionnalités-de-github)auto        - [Clone du laboratoire](#clone-du-laboratoire)auto    - [Résumé](#résumé)autoauto<!-- /TOC -->
 
 ## Introduction
 
-Ce travail pratique permet à l'étudiant la prise en main avec Microsoft Windows et les outils qui seront utilisés durant le semestre. Le cours étant essentiellement axé ligne de commande, il est plus naturel de s'orienter davantage sur un environnement de travail en ligne de commande. Depuis 2016 Microsoft propose un produit nommé **Windows Subsystem for Linux**. Il s'agit d'une distribution Linux tournant dans Windows. 
+Ce travail pratique permet à l'étudiant la prise en main avec Microsoft Windows et les outils qui seront utilisés durant le semestre. Le cours étant essentiellement axé ligne de commande, il est plus naturel de s'orienter davantage sur un environnement de travail idoine. Depuis 2016, Microsoft propose un produit nommé **Windows Subsystem for Linux**. Il s'agit d'une distribution Linux tournant dans Windows. Elle presente l'avantage d'être bien normalisée, et offre à l'étudiant des bases solides pour plus tard développer sur Raspberry PI et d'autres systèmes embarqués.
 
 C'est cet outil qui sera proposé pour le semestre. Les utilisateurs de macOS et de Linux n'auront pas besoin de cet outil et pourront développer sans machine virtuelle Windows.
 
-Linux, macOS ou Windows sont des systèmes d'exploitations qui offrent une interface utilisateur (graphique et en ligne de commande), permettant d'exécuter des programmes, de se connecter à des réseaux informatique. 
+Linux, macOS ou Windows sont des systèmes d'exploitations qui offrent une interface utilisateur (graphique et en ligne de commande), permettant d'exécuter des programmes, de se connecter à des réseaux informatique.
 
-Linux et macOS sont des systèmes dit **POSIX**, c'est à dire qu'ils respectent tous une norme bien précise sur le fonctionnement du système d'exploitation. Cette norme étant très appréciée, elle est utilisée dans beaucoup de systèmes : centres de calculs, serveur web, serveurs de fichiers, satellites, voitures Tesla, fusées spatiales, téléphones mobiles (Android et iPhone) et bien d'autres. 
+Linux et macOS sont des systèmes dit **POSIX**, c'est à dire qu'ils respectent tous une norme bien précise sur le fonctionnement du système d'exploitation. Cette norme étant très appréciée, elle est utilisée dans beaucoup de systèmes : centres de calculs, serveur web, serveurs de fichiers, satellites, voitures Tesla, fusées spatiales, téléphones mobiles (Android et iPhone) et bien d'autres.
 
 Le système d'exploitation Windows est quant à lui très apprécié pour les travaux de bureautiques et les terminaux graphiques. Beaucoup de développeurs utilisent aujourd'hui Windows coinjointement avec Linux, c'est ce que nous allons faire durant ce semestre dans ce cours d'introduction à la programmation en C.
 
@@ -54,10 +22,10 @@ Le système d'exploitation Windows est quant à lui très apprécié pour les tr
 
 Les objectifs de ce travail pratique sont les suivants :
 
-- Familiarisation avec la structure informatique de la HEIG-VD
-- Savoir lire un intitué de laboratoire (oui, oui c'est pas si facile)
-- Appliquer la marche à suivre pour obtenir et rendre un travail pratique
-- Découvrir et installer les outils de développement utiles pour ce cours
+- Découvrir l'environnement Windows et Linux.
+- Savoir lire un intitué de laboratoire (oui, oui c'est pas si facile).
+- Appliquer la marche à suivre pour obtenir et rendre un travail pratique.
+- Découvrir et installer les outils de développement utiles pour ce cours.
 
 ## Prise en main de votre ordinateur
 
@@ -90,7 +58,7 @@ Soyez succint, votre rapport doit être précis et ne mentionner que l'essentiel
 Répondez à ces questions succintement dans votre rapport :
 
 - C'est quoi POSIX ?
-- Quel est le raccourcis Windows pour exécuter rapidement un programme ? 
+- Quel est le raccourcis Windows pour exécuter rapidement un programme ?
 - Quel est le raccourcis Windows pour vérouiller l'ordinateur ?
 
 ## Rendu du laboratoire
@@ -113,7 +81,7 @@ Durant ce travail pratique, plusieurs documents seront à rendre. Pour se prépa
 └── two-pies.txt
 ```
 
-Une fois le travail terminé (notez bien ce point, car ce sera le dernier à faire avant le rendu du laboratoire) : crééez une archive [compressée](https://www.google.com/search?q=windows+how+to+compress+folder) de ce dossier puis envoyez votre archive comprimée par e-mail à votre professeur. 
+Une fois le travail terminé (notez bien ce point, car ce sera le dernier à faire avant le rendu du laboratoire) : crééez une archive [compressée](https://www.google.com/search?q=windows+how+to+compress+folder) de ce dossier puis envoyez votre archive comprimée par e-mail à votre professeur.
 
 ### Microsoft Word
 
@@ -161,6 +129,8 @@ Notepad est un éditeur de texte très moyenâgeux, mais diantrement utile.
 4. Quelle est la version de Notepad que vous utilisez ?
 
 Vous ne savez pas répondre au point 4 ? Utilisez Google, c'est votre ami.
+
+Pour vous assurer que les fichiers ont la bonne extension (les caractères qui suivent le `.` (point), veillez à activer l'option Windows : "Ne pas masquer les extensions des fichiers dont le type est connu". Pour le faire, rendez-vous sous Google et essayer par exemple : "montrer extension fichier windows 10".
 
 ### Calculatrice Windows
 
@@ -224,7 +194,7 @@ La HEIG-VD dispose de stations d'impression à chaque étage permettant la produ
 9. Sauvegardez l'image avec le nom `avion` dans votre dossier de rendu
 10. Offrez votre création à votre professeur (si vous le voulez)
 
-Si vous êtes perdu, ne levez pas tout de suite la main, chercher sur internet par exemple "Comment redimensionner une photo sous Windows 10". Le but de ce laboratoire et aussi de vous inciter à être autonome.
+Si vous êtes perdu, ne levez pas tout de suite la main, chercher sur internet par exemple "Comment redimensionner une photo sous Windows 10". Le but de ce laboratoire et aussi de vous inciter à être autonome (et à montrer à votre prof que vous l'êtes).
 
 ## Installation des outils de développement
 
@@ -234,20 +204,13 @@ Si vous êtes perdu, ne levez pas tout de suite la main, chercher sur internet p
 - **Git** : un logiciel de gestion de version logiciel
 - **Visual Studio Code** : un éditeur de code
 
-### Chocolatey
-
-Chocolatey est un gestionnaire de paquets pour Windows, une solution simplifiée et unifiée pour l'installation de programmes. Il peut simplifier l'installation de programmes sous Windows.
-
-1. Rendez-vous sur [chocolatey.org](https://chocolatey.org/).
-2. Installer Chocolatey sur votre ordinateur
-
 ### Visual Studio Code
 
 [Visual Studio Code](https://code.visualstudio.com/) est un éditeur de code extensible développé par [Microsoft](https://fr.wikipedia.org/wiki/Microsoft) pour Windows, Linux et macOS. Il est un bon point de départ pour programmer dans différents langages (C, C++, Python, JavaScript, Perl, Java...).
 
 Cet éditeur a été choisi pour ce cours car il est très complet, assez léger et surtout, il fonctionne très bien avec WSL sous macOS et naturellement sous Linux.
 
-1. Installer Visual Studio Code depuis Chocolatey avec `choco install vscode`
+1. Installer Visual Studio Code
 2. Exécutez Visual Studio Code
 3. Avec le racourci `<CTRL>+<K> <CTRL>+<O>`, ouvrez votre dossier de rendu :
    1. sur la gauche de la fenêtre vous avez la liste des fichiers de votre dossier.
@@ -268,11 +231,6 @@ Pour installer ce système, vous avez plusieurs solutions ; voici la première :
 2. Choisissez votre distribution préférées. À défaut, optez pour **Ubuntu 20-04**.
 3. Une fois l'installation terminée n'oubliez pas d'[initialiser](https://docs.microsoft.com/en-us/windows/wsl/initialize-distro) votre distribution.
 
-Et voici la seconde :
-
-1. `choco install wsl2` si vous avez mis à jour votre Windows en version 2004 (recommandé). Sinon `choco install wsl`.
-2. `choco install wsl-ubuntu-2004`
-
 Une fois WSL et Ubuntu installés effectuer les opérations suivantes :
 
 1. Exécutez le programme `Ubuntu` maintenant installé
@@ -280,18 +238,15 @@ Une fois WSL et Ubuntu installés effectuer les opérations suivantes :
 
 ### Windows Terminal
 
-Le programme `cmd.exe` est plus vieux que vous et depuis Microsoft à développé un nouveau terminal nommé **Windows Terminal**. Pour l'installer vous avez deux solutions :
+Le programme `cmd.exe` est plus vieux que vous et depuis Microsoft à développé un nouveau terminal nommé **Windows Terminal**. Pour l'installer utilisez le **Windows Store** :
 
 ![wt](assets/wt.png)
 
-1. Utiliser le **Windows Store**
-2. Utiliser Chocolatey avec `choco install microsoft-windows-terminal`
-
-Pour exécuter ce programme, vous pouvez simplement faire `<W-R> wt <ENTER>`. 
+Pour exécuter ce programme, vous pouvez simplement faire `<W-R> wt <ENTER>`.
 
 ### Familiarisation avec Linux
 
-Pour se familiariser avec les exécutables Linux essayons d'installer un programme. Tout d'abord vous devez lancer un terminal. Exécutez Windows Terminal puis depuis le menu déroulant `v` juste à droite du `+` sélectionnez `Ubuntu`. 
+Pour se familiariser avec les exécutables Linux essayons d'installer un programme. Tout d'abord vous devez lancer un terminal. Exécutez Windows Terminal puis depuis le menu déroulant `v` juste à droite du `+` sélectionnez `Ubuntu`.
 
 Depuis l'invité de commande qui s'offre à vous :
 
