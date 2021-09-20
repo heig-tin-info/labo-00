@@ -74,7 +74,6 @@ Durant ce travail pratique, plusieurs documents seront à rendre. Pour se prépa
 ```text
 .
 ├── README.md
-├── avion.png
 ├── hello
 ├── hello.c
 ├── rapport.docx
@@ -178,23 +177,6 @@ Commencez pas collecter quelques informations liées à cette calculatrice :
 ![Calculatrice](assets/calc.png)
 
 ## Informatique à la HEIG-VD
-
-### Imprimante
-
-La HEIG-VD dispose de stations d'impression à chaque étage permettant la production et le scan de documents. La technologie **FollowMe** permet de retenir vos impressions jusqu'à ce que vous soyez pret à récupérer vos documents.
-
-1. Chercher dans l'[intranet](http://intra.heig-vd.ch) la documentation sur **FollowMe**.
-2. Installer les deux imprimantes proposées.
-3. Imprimez la première page de votre rapport en Noir et Blanc (elle doit contenir le titre, le sous-titre et la capture d'écran de votre première page de rapport)
-4. Faite un avion en papier avec la page imprimée (pensez créativité)
-5. Faite une photo de l'avion en papier avec votre téléphone ou celui d'un camarade
-6. Récupérez la photo sur votre ordinateur
-7. Ouvrez la photo avec le programme `Photos`
-8. Redimensionnez l'image à `500x500` pixels
-9. Sauvegardez l'image avec le nom `avion` dans votre dossier de rendu
-10. Offrez votre création à votre professeur (si vous le voulez)
-
-Si vous êtes perdu, ne levez pas tout de suite la main, chercher sur internet par exemple "Comment redimensionner une photo sous Windows 10". Le but de ce laboratoire et aussi de vous inciter à être autonome (et à montrer à votre prof que vous l'êtes).
 
 ## Installation des outils de développement
 
