@@ -2,26 +2,24 @@
 
 **Durée: 2x45 minutes + travail à la maison**
 
-**Rendu: dimanche soir avant minuit**
-
 ## Introduction
 
-Ce travail pratique permet à l'étudiant la prise en main avec Microsoft Windows et les outils qui seront utilisés durant le semestre. Le cours étant essentiellement axé ligne de commande, il est plus naturel de s'orienter davantage sur un environnement de travail idoine. Depuis 2016, Microsoft propose un produit nommé **Windows Subsystem for Linux**. Il s'agit d'une distribution Linux tournant dans Windows. Elle presente l'avantage d'être bien normalisée, et offre à l'étudiant des bases solides pour plus tard développer sur Raspberry PI et d'autres systèmes embarqués.
+Ce travail pratique permet à l'étudiant la prise en main avec Microsoft Windows et les outils qui seront utilisés durant le semestre. Le cours étant essentiellement axé ligne de commande, il est plus naturel de s'orienter davantage sur un environnement de travail idoine. Depuis 2016, Microsoft propose un produit nommé **Windows Subsystem for Linux**. Il s'agit d'une distribution Linux tournant dans Windows. Elle présente l'avantage d'être bien normalisée, et offre à l'étudiant des bases solides pour plus tard développer sur Raspberry PI et d'autres systèmes embarqués.
 
 C'est cet outil qui sera proposé pour le semestre. Les utilisateurs de macOS et de Linux n'auront pas besoin de cet outil et pourront développer sans machine virtuelle Windows.
 
-Linux, macOS ou Windows sont des systèmes d'exploitations qui offrent une interface utilisateur (graphique et en ligne de commande), permettant d'exécuter des programmes, de se connecter à des réseaux informatique.
+Linux, macOS ou Windows sont des systèmes d'exploitation qui offrent une interface utilisateur (graphique et en ligne de commande), permettant d'exécuter des programmes, de se connecter à des réseaux informatiques.
 
-Linux et macOS sont des systèmes dit **POSIX**, c'est à dire qu'ils respectent tous une norme bien précise sur le fonctionnement du système d'exploitation. Cette norme étant très appréciée, elle est utilisée dans beaucoup de systèmes : centres de calculs, serveur web, serveurs de fichiers, satellites, voitures Tesla, fusées spatiales, téléphones mobiles (Android et iPhone) et bien d'autres.
+Linux et macOS sont des systèmes dit **POSIX**, c'est-à-dire qu'ils respectent tous une norme bien précise sur le fonctionnement du système d'exploitation. Cette norme étant très appréciée, elle est utilisée dans beaucoup de systèmes : centres de calculs, serveur web, serveurs de fichiers, satellites, voitures Tesla, fusées spatiales, téléphones mobiles (Android et iPhone) et bien d'autres.
 
-Le système d'exploitation Windows est quant à lui très apprécié pour les travaux de bureautiques et les terminaux graphiques. Beaucoup de développeurs utilisent aujourd'hui Windows coinjointement avec Linux, c'est ce que nous allons faire durant ce semestre dans ce cours d'introduction à la programmation en C.
+Le système d'exploitation Windows est quant à lui très apprécié pour les travaux de bureautiques et les terminaux graphiques. Beaucoup de développeurs utilisent aujourd'hui Windows conjointement avec Linux, c'est ce que nous allons faire durant ce semestre dans ce cours d'introduction à la programmation en C.
 
 ## Objectifs
 
 Les objectifs de ce travail pratique sont les suivants :
 
 - Découvrir l'environnement Windows et Linux.
-- Savoir lire un intitué de laboratoire (oui, oui c'est pas si facile).
+- Savoir lire un intitué de laboratoire (oui, oui ce n’est pas si facile).
 - Appliquer la marche à suivre pour obtenir et rendre un travail pratique.
 - Découvrir et installer les outils de développement utiles pour ce cours.
 
@@ -36,9 +34,9 @@ Une fois connecté sur votre ordinateur, expérimentez les points suivants :
 - La combinaison de touches `<WIN>`+`<R>` fait apparaître le menu **exécuter**.
 - L'invité de dialogue du menu exécuter vous permet d'entrer un nom de programme.
 - La combinaison de touches `<WIN>`+`<E>` fait apparaître l'explorateur de fichiers.
-- La combinaison de touches `<WIN>`+`<L>` vérouille votre ordinateur.
+- La combinaison de touches `<WIN>`+`<L>` verrouille votre ordinateur.
 
->Pour plus de rigueur, nous définission ici comment sont notés les raccourcis claviers : une séquence au clavier peut être exprimée comme une suite de combinaisons de touches. Les chevrons `<>` sont ici utilisés pour différentier un ou des caractères d'une touche du clavier. Par exemple, la touche de tabulation (↹) sera indiquée `<TAB>` alors que `TAB` correspondra à la frappe des trois caractères sur le clavier : `T`, `A` et `B`. Lorsque des touches sont séparées par le signe `+` il s'agit alors d'une combinaison de touches. C'est-à -dire le maintien simultané des touches concernées. Dès lors `<CTRL>`+`<R>` correspond à maintenir la touche **contrôle** pendant que la touche `R` est appuyée. Sur internet et dans de nombreuses documentations, cette notation est souvent abrégée et ce même raccourci peut s'écrire `<C-R>`. À vous d'interprêter convenablement ces écritures selon le contexte.
+>Pour plus de rigueur, nous définissions ici comment sont notés les raccourcis clavier : une séquence au clavier peut être exprimée comme une suite de combinaisons de touches. Les chevrons `<>` sont ici utilisés pour différentier un ou des caractères d'une touche du clavier. Par exemple, la touche de tabulation (↹) sera indiquée `<TAB>` alors que `TAB` correspondra à la frappe des trois caractères sur le clavier : `T`, `A` et `B`. Lorsque des touches sont séparées par le signe `+` il s'agit alors d'une combinaison de touches. C'est-à -dire le maintien simultané des touches concernées. Dès lors `<CTRL>`+`<R>` correspond à maintenir la touche **contrôle** pendant que la touche `R` est appuyée. Sur internet et dans de nombreuses documentations, cette notation est souvent abrégée et ce même raccourci peut s'écrire `<C-R>`. À vous d'interprêter convenablement ces écritures selon le contexte.
 
 Avez-vous compris ? Voici deux séquences de touches, que font-elles ?
 
@@ -51,9 +49,9 @@ Exécutez `%userprofile%` depuis le menu *exécuter* (`<W-E>`), l'explorateur de
 
 ![run](assets/run.png)
 
-Soyez succint, votre rapport doit être précis et ne mentionner que l'essentiel.
+Soyez succinct, votre rapport doit être précis et ne mentionner que l'essentiel.
 
-Répondez à ces questions succintement dans votre rapport :
+Répondez à ces questions succinctement dans votre rapport :
 
 - C'est quoi POSIX ?
 - Quel est le raccourcis Windows pour exécuter rapidement un programme ?
@@ -61,13 +59,13 @@ Répondez à ces questions succintement dans votre rapport :
 
 ## Rendu du laboratoire
 
-Durant ce travail pratique, plusieurs documents seront à rendre. Pour se préparer à ce rendu, commençez tout d'abord par créer un dossier :
+Durant ce travail pratique, plusieurs documents seront à rendre. Pour se préparer à ce rendu, commencez tout d'abord par créer un dossier :
 
 1. Dans `Mes Documents` ou sur votre bureau, créez un dossier intitulé `labo-00`.
 2. Placez-y le fichier `two-pies.txt` créé plus haut.
 3. Constatez que ce dossier contient maintenant un seul et unique fichier.
 
-*Spoiler alert* : à la fin de ce travail vous aurez dans votre dossier la structure suivante :
+*Spoiler alert* : à la fin de ce travail, vous aurez dans votre dossier la structure suivante :
 
 ```text
 .
@@ -89,7 +87,7 @@ Microsoft Office est la suite de bureautique la plus utilisée dans l'industrie,
 3. Cherchez le menu `Styles` et sélectionnez `Titre` et entrez `Rapport de laboratoire`.
 4. Sélectionnez `Sous-titre` et entrez `Laboratoire 00: Familiarisation avec l'ordinteur`.
 5. Constatez que la faute d'orthographe se souligne en rouge (ordinateur ne s'écrit pas ordinteur).
-6. Utiliser un clic-droit sur la faute pour la corriger.
+6. Utiliser un clic droit sur la faute pour la corriger.
 7. Entrez ensuite votre nom, prénom et la date du jour.
 8. Insérez une section avec `<CTRL>+<ALT>+<1>` intitulée `Microsoft Word`.
 9. Faite une capture d'écran pour l'insérer dans votre rapport (il s'agit d'une mise en abyme) :
@@ -153,7 +151,7 @@ Commencez pas collecter quelques informations liées à cette calculatrice :
 
 À présent, effectuez les opérations suivantes et reportez vos observations dans votre rapport.
 
-1. Convertir une température de Farenheit en Celsius. Faite une capture d'écran à placer dans votre rapport
+1. Convertir une température de Farenheit en Celsius. Faites une capture d'écran à placer dans votre rapport
    ![Conversion de température](assets/temperature.png)
 2. Trouver la puissance mécanique équivalente à 42 Chevaux vapeurs:
    1. la petite icône `Cheval` doit montrer `42`.
@@ -166,9 +164,9 @@ Commencez pas collecter quelques informations liées à cette calculatrice :
       1. Commutez les bits 0, 8, 16 et 23
       2. Sauver ce nouveau nombre dans la mémoire avec (MS)
       3. Notez que vous avez dans votre mémoire (à droite de l'écran) deux grandeurs commençant normalement par `5FB6` et `5F37`.
-      4. Soustraire au premier nombre ajouté le nombre actuellement affichée en sélectionnant `M-` sur la valeur sauvegardée dans la mémoire. Ce nombre devrait commencer par plusieur `F`.
+      4. Soustraire au premier nombre ajouté le nombre actuellement affiché en sélectionnant `M-` sur la valeur sauvegardée dans la mémoire. Ce nombre devrait commencer par plusieurs `F`.
          1. Que vaut ce résultat en décimal (`DEC`) ?
-   4. Faite une capture d'écran similaire à celle ci-dessous mais avec les bonnes valeurs soit :
+   4. Faite une capture d'écran similaire à celle ci-dessous, mais avec les bonnes valeurs soit :
       1. Deux valeurs dans la mémoire `0x5F3759DF` et le résultat de la soustraction
       2. Le mode de changement de bits activé.
 
@@ -178,7 +176,7 @@ Commencez pas collecter quelques informations liées à cette calculatrice :
 
 ## Installation des outils de développement
 
-À présent il vous est proposé d'installer quelques outils qui vous serons utiles pour la suite de votre Bachelor et peut-être même votre Master, et peut-être même plus tard lorsque vous serez dans l'industrie.
+À présent il vous est proposé d'installer quelques outils qui vous seront utiles pour la suite de votre Bachelor et peut-être même votre Master, et peut-être même plus tard lorsque vous serez dans l'industrie.
 
 - **WSL** : un système Linux pour Windows 10, permettant d'être compatible POSIX
 - **Git** : un logiciel de gestion de version logiciel
@@ -188,13 +186,13 @@ Commencez pas collecter quelques informations liées à cette calculatrice :
 
 [Visual Studio Code](https://code.visualstudio.com/) est un éditeur de code extensible développé par [Microsoft](https://fr.wikipedia.org/wiki/Microsoft) pour Windows, Linux et macOS. Il est un bon point de départ pour programmer dans différents langages (C, C++, Python, JavaScript, Perl, Java...).
 
-Cet éditeur a été choisi pour ce cours car il est très complet, assez léger et surtout, il fonctionne très bien avec WSL sous macOS et naturellement sous Linux.
+Cet éditeur a été choisi pour ce cours, car il est très complet, assez léger et surtout, il fonctionne très bien avec WSL sous macOS et naturellement sous Linux.
 
 1. Installer Visual Studio Code
 2. Exécutez Visual Studio Code
-3. Avec le racourci `<CTRL>+<K> <CTRL>+<O>`, ouvrez votre dossier de rendu :
-   1. sur la gauche de la fenêtre vous avez la liste des fichiers de votre dossier.
-4. Ouvrez le fichier `hello.c` que nous avons écris plus haut.
+3. Avec le raccourci `<CTRL>+<K> <CTRL>+<O>`, ouvrez votre dossier de rendu :
+   1. sur la gauche de la fenêtre, vous avez la liste des fichiers de votre dossier.
+4. Ouvrez le fichier `hello.c` que nous avons écrit plus haut.
 5. Notez que cette fois-ci vous avez des couleurs.
 6. Avec `<CTRL>+<SHIFT>+<P>` faites apparaître le menu de commande et cherchez `Preferences: Color Theme` et choisissez un thème qui vous convient.
 7. Faites une capture d'écran et intégrez là dans votre rapport.
@@ -208,7 +206,7 @@ Cet éditeur a été choisi pour ce cours car il est très complet, assez léger
 Pour installer ce système, vous avez plusieurs solutions ; voici la première :
 
 1. Utilisez la [documentation](https://docs.microsoft.com/en-us/windows/wsl/install-win10) de Microsoft pour installer WSL
-2. Choisissez votre distribution préférées. À défaut, optez pour **Ubuntu 20-04**.
+2. Choisissez votre distribution préférée. À défaut, optez pour **Ubuntu 20-04**.
 3. Une fois l'installation terminée n'oubliez pas d'[initialiser](https://docs.microsoft.com/en-us/windows/wsl/initialize-distro) votre distribution.
 
 Une fois WSL et Ubuntu installés effectuer les opérations suivantes :
@@ -250,7 +248,7 @@ Depuis l'invité de commande qui s'offre à vous :
 5. Cherchez dans le manuel que fait l'option `-d`
 6. Essayez cette option
 7. Essayez une autre option possible de ce programme, copiez le texte de sortie et insérez-le dans votre rapport.
-8. (optionnel) A votre avis, quelle ligne de commande permet d'afficher ceci ?
+8. (optionnel) à votre avis, quelle ligne de commande permet d'afficher ceci ?
 
    ```text
    _____________________
@@ -282,11 +280,11 @@ Ce que vous devez retenir c'est que:
 
 ### Git
 
-Git est un logiciel de gestion de version très utilisé par les développeurs logiciels. Il est utilisé dans ce cours comme outil principal pour accéder aux énnoncés de laboratoire et soumettre vos modifications. Avantageusement, Git est déjà installé avec Ubuntu 20.04, mais nous devons le configurer avant de pouvoir l'utiliser.
+Git est un logiciel de gestion de version très utilisé par les développeurs logiciels. Il est utilisé dans ce cours comme outil principal pour accéder aux énoncés de laboratoire et soumettre vos modifications. Avantageusement, Git est déjà installé avec Ubuntu 20.04, mais nous devons le configurer avant de pouvoir l'utiliser.
 
 #### Configuration de Git
 
-[Git](https://git-scm.com/) utilise deux informations pour vous identifier : votre nom et votre e-mail. Pour configurer votre identité, exécutez depuis un terminal Ubuntu puis les commandes suivantes en remplacant ce très cher `Emmet` par votre humble patronyme :
+[Git](https://git-scm.com/) utilise deux informations pour vous identifier : votre nom et votre e-mail. Pour configurer votre identité, exécutez depuis un terminal Ubuntu puis les commandes suivantes en remplaçant ce très cher `Emmet` par votre humble patronyme :
 
    ```sh
    git config --global user.name "Emmet Lathrop Brown"
@@ -305,7 +303,7 @@ Notez au passage la structure de ces commandes :
 
 #### Identité SSH
 
-Maintenant que votre identité est saisie, nous souhaitons créez une clé cryptographique pour vous permettre de communiquer à l'abris des mauvaises oreilles avec d'autres ordinateurs sur internet. Cette clé s'appelle *clé SSH* pour *Secure SHell* (litérallement coquille sécurisée, mais tout le monde utilise le terme *shell*).
+Maintenant que votre identité est saisie, nous souhaitons créer une clé cryptographique pour vous permettre de communiquer à l'abri des mauvaises oreilles avec d'autres ordinateurs sur internet. Cette clé s'appelle *clé SSH* pour *Secure SHell* (littéralement coquille sécurisée, mais tout le monde utilise le terme *shell*).
 
 Pour créer votre clé, utilisez simplement la commande:
 
@@ -315,7 +313,7 @@ ssh-keygen
 
 Utilisez toutes les valeurs par défaut (c'est-à-dire appuyez sur `<Enter>` jusqu'à la fin du programme). Dans le cas de ce cours, et à moins que vous ne travaillez aussi pour une agence de renseignement, je vous propose de laisser la `passphrase` (phrase secrète) vide.
 
-À l'issue de cette étape vous obtiendrez quelque chose comme ceci:
+À l'issue de cette étape, vous obtiendrez quelque chose comme ceci:
 
 ```sh
 Generating public/private rsa key pair.
@@ -346,19 +344,19 @@ Ce programme a créé deux clés:
 - Une clé privée que vous ne devez jamais communiquer à personne (ni même votre professeur, vos amis ou votre maître chanteur)
 - Une clé publique que vous pouvez transmettre à ceux qui souhaitent communiquer avec vous.
 
-Plus haut nous avons pu lire: `Your public key has been saved in ~/.ssh/id_rsa.pub` (*Votre clé publique a été sauvée dans ~/.ssh/id_rsa.pub*). Pour consulter votre clé utilisez le programme `cat` qui permet de voir le contenu d'un fichier :
+Plus haut nous avons pu lire: `Your public key has been saved in ~/.ssh/id_rsa.pub` (*Votre clé publique a été sauvée dans ~/.ssh/id_rsa.pub*). Pour consulter votre clé, utilisez le programme `cat` qui permet de voir le contenu d'un fichier :
 
 ```sh
 cat ~/.ssh/id_rsa.pub
 ```
 
-Vous devriez obtenir un texte étrange avec plein de chiffres et de lettres de `a` à `f` et commençant par `ssh-rsa`. Copiez ce texte et insérez le dans votre rapport.
+Vous devriez obtenir un texte étrange avec plein de chiffres et de lettres de `a` à `f` et commençant par `ssh-rsa`. Copiez ce texte et insérez-le dans votre rapport.
 
 Maintenant, si vous voulez *impressionner votre professeur et gagner des points supplémentaires*, mettez dans votre rapport le contenu de votre clé privée accessible depuis `cat ~/.ssh/id_rsa`.
 
 #### Clé de signature GPG (optionnel, si vous avez le temps)
 
-Ce point est optionnel mais par soucis de cohérence avec des besoins de sécurité que vous rencontrerez peut-être en industrie, il vous est possible de générer une autre clé. Celle-ci permet de signer numériquement des documents et ainsi attester que c'est bien vous. Ce système de signature numérique est basé sur l'algorithme [RSA](https://fr.wikipedia.org/wiki/Chiffrement_RSA) inventé en partie par Ronald Rivest, un homme possédant un sourire bien étrange.
+Ce point est optionnel, mais par soucis de cohérence avec des besoins de sécurité que vous rencontrerez peut-être en industrie, il vous est possible de générer une autre clé. Celle-ci permet de signer numériquement des documents et ainsi attester que c'est bien vous. Ce système de signature numérique est basé sur l'algorithme [RSA](https://fr.wikipedia.org/wiki/Chiffrement_RSA) inventé en partie par Ronald Rivest, un homme possédant un sourire bien étrange.
 
 Pour générer cette clé vous pouvez exécuter `gpg --full-generate-key`. Il vous sera posé plusieurs questions :
 
@@ -379,7 +377,7 @@ uid                      Emmet Lathrop Brown (Student key) <emmet.brown@heig-vd.
 sub   rsa3072 2020-09-01 [E] [expires: 2021-09-01]
 ```
 
-Le long code `A461949069AD05045E0B6BDF5448E6BB6E2BC82D` est l'identifiant de votre clé. Pour que Git puisse utiliser cette clé et ainsi signer vos transactions utilisez la commande suivante. Remplacez naturellement l'identité par celle que vous avez générée.
+Le long code `A461949069AD05045E0B6BDF5448E6BB6E2BC82D` est l'identifiant de votre clé. Pour que Git puisse utiliser cette clé et ainsi signer vos transactions, utilisez la commande suivante. Remplacez naturellement l'identité par celle que vous avez générée.
 
 ```
 git config --global user.signingkey A461949069AD05045E0B6BDF5448E6BB6E2BC82D
@@ -395,12 +393,12 @@ Avant toute chose, et si ce n'est pas déjà fait, il vous faut créer un compte
 
 1. Allez sur [GitHub](https://github.com/)
 2. Sélectionnez `Sign Up` et créer un compte GitHub.
-3. Choisissez un `username` à votre convenance. Pour simplifier le travail du professeur, utilisez `prenom-nom` en **minuscule** et avec un tiret. De plus, c'est la convention d'usage de nommer en minuscule les mots séparés par des tirets (On appel ça le kebab-case à l'image de mots en prise sur une pique de fer).
+3. Choisissez un `username` à votre convenance. Pour simplifier le travail du professeur, utilisez `prenom-nom` en **minuscule** et avec un tiret. De plus, c'est la convention d'usage de nommer en minuscule les mots séparés par des tirets (On appelle ça le kebab-case à l'image de mots en prise sur une pique de fer).
 4. Utilisez (dans la mesure du possible) votre e-mail de la HEIG-VD afin de bénécifier des avantages du Campus Program.
 
-### Déployement des clés
+### Déploiement des clés
 
-#### Déloyement de votre clé publique
+#### Déploiement de votre clé publique
 
 Vous rappelez-vous, nous avions créé une clé `SSH` pour sécuriser nos transactions avec Git. Il est temps d'ajouter cette clé à votre compte GitHub.
 
@@ -419,7 +417,7 @@ Vous rappelez-vous, nous avions créé une clé `SSH` pour sécuriser nos transa
 4. Copier/coller votre clé publique.
 5. Nommez votre clé `HEIG-VD`.
 
-#### Deployement de votre clé GPG (optionnel)
+#### Déploiement de votre clé GPG (optionnel)
 
 Si vous avez créé une clé de chiffrement et de signature, vous pouvez ajouter la clé publique à GitHub. De la même manière qu'au point précédant, depuis le même sous-menu, cliquez sur le bouton `New GPG key`.
 
@@ -435,7 +433,7 @@ Copiez l'ensemble du texte y compris les `-----BEGIN PGP...` et `-----END PGP...
 
 Votre identifiant GitHub (login/password) vous permet d'accéder au site internet de GitHub et de protéger son accès. La clé SSH permet d'échanger des données de façon sécurisée entre votre ordinateur et GitHub sans devoir entrer votre mot de passe à chaque fois. Cela sera utile pour le rendu de labos. Enfin, la clé GPG permet de signer numériquement les transactions que vous ferez avec GitHub, ce qui est optionnel bien entendu.
 
-Votre clé SSH vous permet aussi d'accéder à d'autres ordinateurs à distance depuis Linux (par exemple un Raspberry PI), elle n'est pas uniquement dédiée à Git. Votre clé GPG aussi peut être utilisée pour d'autres applications. Vous pouvez par exemple chiffrez des docuemnts, créer des messages secrets etc.
+Votre clé SSH vous permet aussi d'accéder à d'autres ordinateurs à distance depuis Linux (par exemple un Raspberry PI), elle n'est pas uniquement dédiée à Git. Votre clé GPG aussi peut être utilisée pour d'autres applications. Vous pouvez par exemple chiffrer des documents, créer des messages secrets, etc.
 
 ### Découvertes des fonctionnalités de GitHub
 
@@ -459,7 +457,7 @@ Expliquez dans votre rapport ce que vous avez compris de cette fonctionnalité `
 
 ### Clone du laboratoire
 
-Par la suite, les énnoncés des travaux pratiques seront accompagnés de code source à compléter. Les référentiels de code seront disponibles sur GitHub. Le rendu du travail consistera à publier vos changements sur GitHub.
+Par la suite, les énoncés des travaux pratiques seront accompagnés de code source à compléter. Les référentiels de code seront disponibles sur GitHub. Le rendu du travail consistera à publier vos changements sur GitHub.
 
 1. Lancer un terminal Ubuntu
 2. Cloner le référentiel de ce travail pratique avec la commande suivante :
@@ -473,7 +471,7 @@ Par la suite, les énnoncés des travaux pratiques seront accompagnés de code s
 
 ## Résumé
 
-Bravo, vous venez de terminer ce premier travail pratique. Durant toute la procédure vous avez pu :
+Bravo, vous venez de terminer ce premier travail pratique. Durant toute la procédure, vous avez pu :
 
 - Accéder aux infrastructures réseau de l'école
 - Imprimer des documents
