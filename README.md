@@ -207,7 +207,6 @@ Pour installer ce système, vous avez plusieurs solutions ; voici la première :
 
 1. Utilisez la [documentation](https://docs.microsoft.com/en-us/windows/wsl/install-win10) de Microsoft pour installer WSL
 2. Choisissez votre distribution préférée. À défaut, optez pour **Ubuntu 20-04**.
-3. Une fois l'installation terminée n'oubliez pas d'[initialiser](https://docs.microsoft.com/en-us/windows/wsl/initialize-distro) votre distribution.
 
 Une fois WSL et Ubuntu installés effectuer les opérations suivantes :
 
