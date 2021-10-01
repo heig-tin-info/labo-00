@@ -474,7 +474,6 @@ Bravo, vous venez de terminer ce premier travail pratique. Durant toute la proc�
 
 - Accéder aux infrastructures réseau de l'école
 - Imprimer des documents
-- Faire une photo et la redimensionner
 - Créer un rapport Word
 - Installer Linux sous Windows
 - Configurer Git
@@ -483,4 +482,3 @@ Bravo, vous venez de terminer ce premier travail pratique. Durant toute la proc�
 - Installer Microsoft Visual Studio Code (VsCode)
 - Vu que la Calculatrice Windows est open-source et qu'elle renferme de nombreuses fonctionnalités intéressantes
 - Exécuter des programmes sous Linux comme `cowsay`
-- Installer un gestionnaire de paquets pour Windows nommé Chocolatey
