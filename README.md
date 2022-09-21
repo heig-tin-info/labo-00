@@ -4,11 +4,11 @@
 
 ## Introduction
 
-Ce travail pratique permet à l'étudiant la prise en main avec Microsoft Windows et les outils qui seront utilisés durant le semestre. Le cours étant essentiellement axé ligne de commande, il est plus naturel de s'orienter davantage sur un environnement de travail idoine. Depuis 2016, Microsoft propose un produit nommé **Windows Subsystem for Linux**. Il s'agit d'une distribution Linux tournant dans Windows. Elle présente l'avantage d'être bien normalisée, et offre à l'étudiant des bases solides pour plus tard développer sur Raspberry PI et d'autres systèmes embarqués.
+Ce travail pratique permet à l'étudiant la prise en main avec Microsoft Windows et les outils qui seront utilisés durant le semestre. Le cours étant essentiellement axé ligne de commande, il est plus naturel de s'orienter davantage sur un environnement de travail idoine. Depuis 2016, Microsoft offre un produit nommé **Windows Subsystem for Linux**, de son petit nom **WSL**. Il s'agit d'une [distribution Linux](https://fr.wikipedia.org/wiki/Distribution_Linux) tournant dans Windows. Elle présente l'avantage d'être bien normalisée (respect du standard [POSIX](https://fr.wikipedia.org/wiki/POSIX)), et offre à l'étudiant des bases solides pour plus tard développer sur [Raspberry PI](https://fr.wikipedia.org/wiki/Raspberry_Pi) et d'autres [systèmes embarqués](https://fr.wikipedia.org/wiki/Syst%C3%A8me_embarqu%C3%A9).
 
-C'est cet outil qui sera proposé pour le semestre. Les utilisateurs de macOS et de Linux n'auront pas besoin de cet outil et pourront développer sans machine virtuelle Windows.
+C'est cet outil, WSL, qui sera proposé pour le semestre. Les utilisateurs de [macOS](https://fr.wikipedia.org/wiki/MacOS) et de [Linux](https://fr.wikipedia.org/wiki/Linux) n'auront pas besoin de cet outil et pourront développer sans machine virtuelle Windows.
 
-Linux, macOS ou Windows sont des systèmes d'exploitation qui offrent une interface utilisateur (graphique et en ligne de commande), permettant d'exécuter des programmes, de se connecter à des réseaux informatiques.
+Linux, macOS ou Windows sont des [systèmes d'exploitation](https://fr.wikipedia.org/wiki/Syst%C3%A8me_d%27exploitation) qui offrent une interface utilisateur (graphique et en ligne de commande), permettant d'exécuter des programmes et de se connecter à des réseaux informatiques.
 
 Linux et macOS sont des systèmes dit **POSIX**, c'est-à-dire qu'ils respectent tous une norme bien précise sur le fonctionnement du système d'exploitation. Cette norme étant très appréciée, elle est utilisée dans beaucoup de systèmes : centres de calculs, serveur web, serveurs de fichiers, satellites, voitures Tesla, fusées spatiales, téléphones mobiles (Android et iPhone) et bien d'autres.
 
@@ -18,23 +18,26 @@ Le système d'exploitation Windows est quant à lui très apprécié pour les tr
 
 Les objectifs de ce travail pratique sont les suivants :
 
-- Découvrir l'environnement Windows et Linux.
-- Savoir lire un intitué de laboratoire (oui, oui ce n’est pas si facile).
-- Appliquer la marche à suivre pour obtenir et rendre un travail pratique.
-- Découvrir et installer les outils de développement utiles pour ce cours.
+- découvrir l'environnement Windows et Linux ;
+- savoir lire un intitulé de laboratoire ([oui, oui ce n’est pas si facile](https://en.wikipedia.org/wiki/RTFM)) ;
+- appliquer la marche à suivre pour obtenir et rendre un travail pratique ;
+- découvrir et installer les outils de développement utiles pour ce cours.
 
 ## Prise en main de votre ordinateur
 
-Démarrez votre PC et connectez-vous au réseau de l'école en utilisant vos identifiants personnels [AAI](https://aai-admin.hes-so.ch). Votre login est votre prénom et votre nom séparé par un point. Votre nom de famille pourrait être tronqué si l'ensemble dépasse 13 caractères. Votre mot de passe c'est... bah votre mot de passe... Il se pourrait que vous deviez préfixer votre login par le nom du domaine informatique de l'école (`einet.ad.eivd.ch`) ou simplement `einet`. Ainsi vous pourriez avoir quelque chose comme : `einet\yves.chevalli`.
+Démarrez votre ordinateur et connectez-vous au réseau de l'école en utilisant vos identifiants personnels [AAI](https://aai-admin.hes-so.ch). Votre login est votre prénom et votre nom séparé par un point. Votre nom de famille pourrait être tronqué si l'ensemble dépasse 13 caractères. Votre mot de passe c'est... bah votre mot de passe... Il se pourrait que vous deviez préfixer votre login par le nom du domaine informatique de l'école (`einet.ad.eivd.ch`) ou simplement `einet`. Ainsi vous pourriez avoir quelque chose comme : `einet\yves.chevalli`.
 
 Une fois connecté sur votre ordinateur, expérimentez les points suivants :
 
-- Un bref appui sur la **touche Windows** positionnée sur le clavier à gauche de la barre d'espace et entre `<CTRL>` et `<ALT>` ouvre le menu **démarrer** duquel vous accédez à vos programmes.
-- Une frappe au clavier alors que le menu Démarrer est ouvert vous permet la recherche de programmes
-- La combinaison de touches `<WIN>`+`<R>` fait apparaître le menu **exécuter**.
-- L'invité de dialogue du menu exécuter vous permet d'entrer un nom de programme.
-- La combinaison de touches `<WIN>`+`<E>` fait apparaître l'explorateur de fichiers.
-- La combinaison de touches `<WIN>`+`<L>` verrouille votre ordinateur.
+1. Un bref appui sur la **touche Windows** positionnée sur le clavier à gauche de la barre d'espace et entre `<CTRL>` et `<ALT>` ouvre le menu **démarrer** duquel vous accédez à vos programmes.
+2. Une frappe au clavier alors que le menu Démarrer est ouvert vous permet la recherche de programmes.
+3. La combinaison de touches `<WIN>`+`<R>` fait apparaître le menu **exécuter**.
+4. L'invité de dialogue du menu exécuter vous permet d'entrer un nom de programme.
+5. La combinaison de touches `<WIN>`+`<E>` fait apparaître l'explorateur de fichiers.
+6. La combinaison de touches `<WIN>`+`<L>` verrouille votre ordinateur.
+7. La combinaison de touches `<WIN>`+`<MAJ>`+`<S>` fait apparaître l'outil de capture d'écran.
+
+Les raccourcis claviers sont nombreux, et ils améliorent le confort de travail. Plus vous en connaissez, meilleure est votre productivité. Plus vous en connaissez, mieux vous structurez votre esprit à comprendre les machines. Au début c'est contraignant, puis cela peut devenir ludique.
 
 >Pour plus de rigueur, nous définissions ici comment sont notés les raccourcis clavier : une séquence au clavier peut être exprimée comme une suite de combinaisons de touches. Les chevrons `<>` sont ici utilisés pour différentier un ou des caractères d'une touche du clavier. Par exemple, la touche de tabulation (↹) sera indiquée `<TAB>` alors que `TAB` correspondra à la frappe des trois caractères sur le clavier : `T`, `A` et `B`. Lorsque des touches sont séparées par le signe `+` il s'agit alors d'une combinaison de touches. C'est-à -dire le maintien simultané des touches concernées. Dès lors `<CTRL>`+`<R>` correspond à maintenir la touche **contrôle** pendant que la touche `R` est appuyée. Sur internet et dans de nombreuses documentations, cette notation est souvent abrégée et ce même raccourci peut s'écrire `<C-R>`. À vous d'interprêter convenablement ces écritures selon le contexte.
 
@@ -51,15 +54,15 @@ Exécutez `%userprofile%` depuis le menu *exécuter* (`<W-E>`), l'explorateur de
 
 Soyez succinct, votre rapport doit être précis et ne mentionner que l'essentiel.
 
-Répondez à ces questions succinctement dans votre rapport :
+Répondez à ces questions succinctement dans votre rapport pour me montrer que vous avez compris :
 
-- C'est quoi POSIX ?
-- Quel est le raccourcis Windows pour exécuter rapidement un programme ?
-- Quel est le raccourcis Windows pour vérouiller l'ordinateur ?
+1. C'est quoi **POSIX** ?
+2. Quel est le raccourcis Windows pour exécuter rapidement un programme ?
+3. Quel est le raccourcis Windows pour verrouiller l'ordinateur ?
 
 ## Rendu du laboratoire
 
-Durant ce travail pratique, plusieurs documents seront à rendre. Pour se préparer à ce rendu, commencez tout d'abord par créer un dossier :
+Durant ce travail pratique, vous l'avez maintenant compris, plusieurs documents seront à rendre. Pour se préparer à ce rendu, commencez tout d'abord par créer un dossier :
 
 1. Dans `Mes Documents` ou sur votre bureau, créez un dossier intitulé `labo-00`.
 2. Placez-y le fichier `two-pies.txt` créé plus haut.
@@ -73,10 +76,25 @@ Durant ce travail pratique, plusieurs documents seront à rendre. Pour se prépa
 ├── hello
 ├── hello.c
 ├── rapport.docx
+├── document.xml
 └── two-pies.txt
 ```
 
+Notez la notion de hiérarchie, le dossier `labo-00` contient plusieurs fichiers. Cette hiérarchie est elle même située dans une autre hiérarchie, celle de votre dossier personnel. C'est ce que l'on appelle un arbre de fichiers, ou arborescence.
+
 Une fois le travail terminé (notez bien ce point, car ce sera le dernier à faire avant le rendu du laboratoire) : crééez une archive [compressée](https://www.google.com/search?q=windows+how+to+compress+folder) de ce dossier puis envoyez votre archive comprimée par e-mail à votre professeur.
+
+### Customisation de l'explorateur de fichiers
+
+Par défaut, Windows est optimisé pour le profane, il est essentiel pour l'ingénieur de modifier quelques options pour améliorer son confort de travail. Pour ce faire, il vous est demandé de modifier les options de l'explorateur de fichiers. Rendez-vous dans les options de dossier, puis dans l'onglet `Affichage` et décochez l'option suivante :
+
+- [ ] Cachez les extensions des fichiers connus.
+
+Elle vous permet de voir les extensions des fichiers, ce qui est très utile pour identifier les fichiers. Par exemple, un fichier `hello.c` est un fichier source C, alors qu'un fichier `hello.exe` est un exécutable. Vous pouvez aussi modifier l'option suivante :
+
+- [ ] Afficher les fichiers et dossiers cachés.
+
+Elle vous permet de voir les fichiers et dossiers cachés, qui sont des fichiers et dossiers qui ne sont pas affichés par défaut. Par exemple, le fichier `.gitignore` est un fichier caché qui permet de spécifier les fichiers à ignorer dans un dépôt Git. Nous verrons cela plus tard.
 
 ### Microsoft Word
 
@@ -97,6 +115,21 @@ Microsoft Office est la suite de bureautique la plus utilisée dans l'industrie,
 10. Gardez votre document ouvert pour la suite des opérations.
 11. ... Une fois toutes les autres étapes terminées, sauvegardez votre rapport dans votre dossier de rendu.
 
+Notez au passage que ce fichier porte l'extension `.docx`, c'est une extension de fichier Microsoft Word. Le `x` signifie que le fichier utilise le format `XML` compressé pour stocker les données, un format unifié avec les nouvelles version de Word. En réalité ce fichier est une archive qui contient une arborescence d'autres fichiers qui peuvent être ouvert avec un éditeur de texte.
+
+Essayez par exemple de créer un fichier Word qui contient la phrase `les biscuits aux beurre`. Sauvegardez ce fichier avec le nom `biscuit.docx`. Puis, renommez le fichier avec l'extension `.zip`. Vous constatez que l'icône du fichier à changé. En ouvrant ce fichiers vous aurez une arborescence de l'archive compressée. Jetez un oeil au fichier `document.xml` et vous verrez que le texte est bien présent :
+
+```xml
+<w:p w14:paraId="0F5C4F6A"
+     w14:textId="4920233C" w:rsidR="00557DE2" w:rsidRDefault="00A65091">
+   <w:r>
+         <w:t>les biscuits au beurre</w:t>
+   </w:r>
+</w:p>
+```
+
+Intégrez ce fichier `document.xml` à votre dossier de rendu.
+
 ### Notepad
 
 Notepad est un éditeur de texte très moyenâgeux, mais diantrement utile.
@@ -113,7 +146,7 @@ Notepad est un éditeur de texte très moyenâgeux, mais diantrement utile.
    **/
    #include <stdio.h>
 
-   int main(void) {
+   int main() {
       printf("hello, world\n");
       return 0;
    }
@@ -123,16 +156,18 @@ Notepad est un éditeur de texte très moyenâgeux, mais diantrement utile.
    1. Veillez à ne pas choisir "Document Texte" lors de la sauvegarde pour que l'extension du fichier soit `.c` et non `.c.txt`
 4. Quelle est la version de Notepad que vous utilisez ?
 
-Vous ne savez pas répondre au point 4 ? Utilisez Google, c'est votre ami.
+Vous ne savez pas répondre au point 4 ? Utilisez Google, c'est votre meilleur ami.
 
-Pour vous assurer que les fichiers ont la bonne extension (les caractères qui suivent le `.` (point), veillez à activer l'option Windows : "Ne pas masquer les extensions des fichiers dont le type est connu". Pour le faire, rendez-vous sous Google et essayer par exemple : "montrer extension fichier windows 10".
+**Rappel:** pour vous assurer que les fichiers ont la bonne extension (les caractères qui suivent le `.` (point), veillez à activer l'option Windows : "Ne pas masquer les extensions des fichiers dont le type est connu". Pour le faire, rendez-vous sous Google et essayer par exemple : "montrer extension fichier windows 10".
+
+Au passage, bravo, vous venez d'écrire votre premier programme C à l'école d'ingénieurs. Vous êtes un vrai hacker !
 
 ### Calculatrice Windows
 
 Commencez pas collecter quelques informations liées à cette calculatrice :
 
 1. Démarrez la calculatrice Windows en écrivant `calc` dans le menu *exécuter*.
-2. Démarrez votre navigateur internet en recherchant `edge` dans la barre de recherche du menu démarrer.
+2. Démarrez votre navigateur internet en recherchant `edge` ou `chrome` dans la barre de recherche du menu démarrer.
     1. Cherchez `windows 10 calculator shortcuts`
     2. Trouvez dans les résultats de recherche un site donnant les raccourcis clavier pour :
        1. afficher le mode scientifique,
@@ -155,7 +190,7 @@ Commencez pas collecter quelques informations liées à cette calculatrice :
    ![Conversion de température](assets/temperature.png)
 2. Trouver la puissance mécanique équivalente à 42 Chevaux vapeurs:
    1. la petite icône `Cheval` doit montrer `42`.
-   2. Capturez la fenêtre de la calculatrice avec `<ALT>+<PRINT SCREEN>`.
+   2. Capturez la fenêtre de la calculatrice avec `<WIN>+<MAJ>+<S>`.
    3. Insérer la capture dans votre rapport.
 3. Entrez en mode programmeur
    1. Saisir en hexadécimal (HEX) la valeur `5F3759DF`
@@ -176,9 +211,9 @@ Commencez pas collecter quelques informations liées à cette calculatrice :
 
 ## Installation des outils de développement
 
-À présent il vous est proposé d'installer quelques outils qui vous seront utiles pour la suite de votre Bachelor et peut-être même votre Master, et peut-être même plus tard lorsque vous serez dans l'industrie.
+À présent, il vous est proposé d'installer quelques outils qui vous seront utiles pour la suite de votre bachelor et peut-être même votre master, et peut-être même plus tard lorsque vous serez dans l'industrie.
 
-- **WSL** : un système Linux pour Windows 10, permettant d'être compatible POSIX
+- **WSL** : un système Linux pour Windows, permettant d'être compatible POSIX
 - **Git** : un logiciel de gestion de version logiciel
 - **Visual Studio Code** : un éditeur de code
 
@@ -187,6 +222,10 @@ Commencez pas collecter quelques informations liées à cette calculatrice :
 [Visual Studio Code](https://code.visualstudio.com/) est un éditeur de code extensible développé par [Microsoft](https://fr.wikipedia.org/wiki/Microsoft) pour Windows, Linux et macOS. Il est un bon point de départ pour programmer dans différents langages (C, C++, Python, JavaScript, Perl, Java...).
 
 Cet éditeur a été choisi pour ce cours, car il est très complet, assez léger et surtout, il fonctionne très bien avec WSL sous macOS et naturellement sous Linux.
+
+> Vous pouvez vous rendre sur [2022 Developer Survey](https://survey.stackoverflow.co/2022/) et descendre à *Integrated development environment* [ici](https://survey.stackoverflow.co/2022/#section-most-popular-technologies-integrated-development-environment). Constatez quel est l'éditeur le plus populaire dans la communauté en 2022.
+
+Allez, en avant, installons Visual Studio Code...
 
 1. Installer Visual Studio Code
 2. Exécutez Visual Studio Code
@@ -197,6 +236,16 @@ Cet éditeur a été choisi pour ce cours, car il est très complet, assez lége
 6. Avec `<CTRL>+<SHIFT>+<P>` faites apparaître le menu de commande et cherchez `Preferences: Color Theme` et choisissez un thème qui vous convient.
 7. Faites une capture d'écran et intégrez là dans votre rapport.
 
+*Note importante* : L'anglais est la langue de la programmation. Il est donc important de s'habituer à lire et écrire en anglais. Si vous avez des difficultés, vous pouvez utiliser un traducteur en ligne. Cela va de même pour la langue de vos logiciels. Forcez-vous à utiliser Visual Studio Code en anglais. Vous pouvez changer la langue de l'interface en allant dans `File > Preferences > Language`.
+
+Créez un nouveau fichier `anaphore.txt` et écrivez-y l'anaphore célèbre de Aragon (Strophes pour se souvenir):
+
+> Vingt et trois qui donnaient le cœur avant le temps
+> Vingt et trois étrangers et nos frères pourtant
+> Vingt et trois amoureux de vivre à en mourir
+
+Vous constatez que le mot `trois` apparaît `trois` fois. Vous pouvez placer votre curseur sur ce mot et utiliser le raccourci `<CTRL>+<D>` pour sélectionner les autres occurrences de ce mot. Vous pouvez ensuite les modifier en même temps. Essayez de changer le mot `trois` en `quatre` et constatez que les autres occurrences sont modifiées en même temps. Félicitation vous venez d'utiliser l'option multi-curseurs de Visual Studio Code.
+
 ### WSL
 
 [Windows Subsystem for Linux](https://en.wikipedia.org/wiki/Windows_Subsystem_for_Linux) est une couche de compatibilité pour Windows permettant de faire tourner un vrai système Linux sur votre ordinateur Windows. Si vous avez peur de la ligne de commande, n'ayez crainte, nous allons avidement l'utiliser durant ce cours.
@@ -205,21 +254,25 @@ Cet éditeur a été choisi pour ce cours, car il est très complet, assez lége
 
 Pour installer ce système, vous avez plusieurs solutions ; voici la première :
 
-1. Utilisez la [documentation](https://docs.microsoft.com/en-us/windows/wsl/install-win10) de Microsoft pour installer WSL
-2. Choisissez votre distribution préférée. À défaut, optez pour **Ubuntu 20-04**.
+1. Utilisez la [documentation](https://learn.microsoft.com/en-us/windows/wsl/install) de Microsoft pour installer WSL
+2. Choisissez votre distribution préférée. À défaut, optez pour **Ubuntu**.
 
 Une fois WSL et Ubuntu installés effectuer les opérations suivantes :
 
 1. Exécutez le programme `Ubuntu` maintenant installé
-2. Après quelques instants, il vous est demandé de saisir un mot de passe, choisissez un mot de passe assez simple, il n'est pas très important.
+2. Après quelques instants, il vous est demandé de saisir un nom d'utilisateur puis un mot de passe, choisissez un mot de passe assez simple, il n'est pas très important.
+
+**Important** : Ne sautez pas cette étape. Créez un utilisateur par exemple vos initials.
 
 ### Windows Terminal
 
-Le programme `cmd.exe` est plus vieux que vous et depuis Microsoft à développé un nouveau terminal nommé **Windows Terminal**. Pour l'installer utilisez le **Windows Store** :
+Le programme `cmd.exe` est plus vieux que vous et depuis Microsoft à développé un nouveau terminal nommé **Windows Terminal**. Pour l'installer utilisez le **Windows Store** (touche Windows puis `store`).
 
 ![wt](assets/wt.png)
 
 Pour exécuter ce programme, vous pouvez simplement faire `<W-R> wt <ENTER>`.
+
+Configurez par défaut `Ubuntu` dans les paramètres `<CTRL>+,` et choisissez le profile par défaut. Choisissez aussi comme terminal par défaut `Windows Terminal`.
 
 ### Familiarisation avec Linux
 
@@ -227,9 +280,9 @@ Pour se familiariser avec les exécutables Linux essayons d'installer un program
 
 Depuis l'invité de commande qui s'offre à vous :
 
-1. Mettre à jour la liste des logiciels disponibles avec `sudo apt-get update`
-2. Installer le programme `cowsay` (vache qui parle) avec `sudo apt-get install cowsay`
-3. Exécuter `cowsay` suivi d'une phrase de votre choix, p.ex:
+1. Mettre à jour la liste des logiciels disponibles avec `sudo apt update`
+2. Installer le programme `cowsay` (vache qui parle) avec `sudo apt install cowsay`
+3. Exécuter `cowsay` suivi d'une phrase de votre choix, p.ex. :
 
    ```text
    $ cowsay Meuuuuuh
@@ -273,7 +326,7 @@ Depuis l'invité de commande qui s'offre à vous :
 
 Ce que vous devez retenir c'est que:
 
-- Pour installer un programme sous Linux Ubuntu il faut utiliser la commande `apt-get install` suivi du nom de la commande que vous voulez utiliser.
+- Pour installer un programme sous Linux Ubuntu il faut utiliser la commande `apt install` suivi du nom de la commande que vous voulez utiliser.
 - Pour consulter l'aide d'un programme, utilisez le programme `man` qui affiche le manuel d'un programme.
 - L'appel des programmes peut être modifié avec des options comme `-d`.
 
@@ -283,7 +336,7 @@ Git est un logiciel de gestion de version très utilisé par les développeurs l
 
 #### Configuration de Git
 
-[Git](https://git-scm.com/) utilise deux informations pour vous identifier : votre nom et votre e-mail. Pour configurer votre identité, exécutez depuis un terminal Ubuntu puis les commandes suivantes en remplaçant ce très cher `Emmet` par votre humble patronyme :
+[Git](https://git-scm.com/) utilise deux informations pour vous identifier : votre **nom** et votre **e-mail**. Pour configurer votre identité, exécutez depuis un terminal Ubuntu puis les commandes suivantes en remplaçant ce très cher `Emmet` par votre humble patronyme :
 
    ```sh
    git config --global user.name "Emmet Lathrop Brown"
@@ -293,7 +346,7 @@ Git est un logiciel de gestion de version très utilisé par les développeurs l
 Notez au passage la structure de ces commandes :
 
 1. `git` c'est le nom du programme que vous exécutez
-2. `config` c'est une sous commande permettant de configurer Git
+2. `config` c'est une *sous commande* permettant de configurer Git
 3. `--global` il s'agit d'un modificateur reconnaissable à ses deux tirets, qui indique que nous souhaitons modifier la configuration globalement dans tout Ubuntu
 4. `user.name` c'est le paramètre de configuration que vous voulez modifier
 5. `"Emmet Lathrop Brown"` c'est une chaîne de caractère comportant le prénom suivi du nom.
@@ -316,7 +369,7 @@ Utilisez toutes les valeurs par défaut (c'est-à-dire appuyez sur `<Enter>` jus
 
 ```sh
 Generating public/private rsa key pair.
-Enter file in which to save the key (~/.ssh/id_rsa):
+Enter file in which to save the key (~/.ssh/id_rsa): (appuyez sur <Enter>)
 Created directory '~/.ssh'.
 Enter passphrase (empty for no passphrase):
 Enter same passphrase again:
@@ -343,19 +396,25 @@ Ce programme a créé deux clés:
 - Une clé privée que vous ne devez jamais communiquer à personne (ni même votre professeur, vos amis ou votre maître chanteur)
 - Une clé publique que vous pouvez transmettre à ceux qui souhaitent communiquer avec vous.
 
+La clé publique découle de la clé privée. Elle y est intrinsèquement liée. Si vous perdez votre clé privée, vous ne pourrez plus communiquer avec les autres ordinateurs. Si vous perdez votre clé publique, vous pourrez toujours communiquer avec les autres ordinateurs, mais personne ne pourra communiquer avec vous.
+
 Plus haut nous avons pu lire: `Your public key has been saved in ~/.ssh/id_rsa.pub` (*Votre clé publique a été sauvée dans ~/.ssh/id_rsa.pub*). Pour consulter votre clé, utilisez le programme `cat` qui permet de voir le contenu d'un fichier :
 
 ```sh
 cat ~/.ssh/id_rsa.pub
 ```
 
-Vous devriez obtenir un texte étrange avec plein de chiffres et de lettres de `a` à `f` et commençant par `ssh-rsa`. Copiez ce texte et insérez-le dans votre rapport.
+Vous devriez obtenir un texte étrange avec plein de chiffres et de lettres de `a` à `f` et commençant par `ssh-rsa`. Copiez ce texte et insérez-le dans votre rapport. Par exemple, ma propre clé SSH publique est la suivante :
+
+```sh
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC+yNp7af6zI8NINIFX1aRj+nzKksZ6XzBSkgA/iuPpYIGz5SSZOkwkvN0DnX8J42DcuEK/mnu3+f9Wh746823gxhXqtj+7Wv9z9DJ9O9qrsYlnxIMipoqepE/Xt+jE5Yv8ullIdsvZdzY611R5DFwrVswslz9OdmpH6nWCmnY/cGZva79ngdcvJLKFk++fl+Be1xshWt24svawRH7Fdxn8VyUKmP2Twy6iMo3MT9xGe5leV1CiTXfkzLYntNV50/dtzQN+pwcwRBdXBP9FdO9+IzieY6bUGttT6t2VcWoK6jFF+i94Chl/FeGvRU1X/QzSP3SYT2biNRNmznSIa2VD
+```
 
 Maintenant, si vous voulez *impressionner votre professeur et gagner des points supplémentaires*, mettez dans votre rapport le contenu de votre clé privée accessible depuis `cat ~/.ssh/id_rsa`.
 
-#### Clé de signature GPG (optionnel, si vous avez le temps)
+#### Clé de signature GPG (optionnel, si vous êtes un hacker)
 
-Ce point est optionnel, mais par soucis de cohérence avec des besoins de sécurité que vous rencontrerez peut-être en industrie, il vous est possible de générer une autre clé. Celle-ci permet de signer numériquement des documents et ainsi attester que c'est bien vous. Ce système de signature numérique est basé sur l'algorithme [RSA](https://fr.wikipedia.org/wiki/Chiffrement_RSA) inventé en partie par Ronald Rivest, un homme possédant un sourire bien étrange.
+Ce point est optionnel, mais par soucis de cohérence avec des besoins de sécurité que vous rencontrerez peut-être en industrie, il vous est possible de générer une autre clé. Celle-ci permet de signer numériquement des documents et ainsi attester que c'est bien vous. Ce système de signature numérique est basé sur l'algorithme [RSA](https://fr.wikipedia.org/wiki/Chiffrement_RSA) inventé en partie par Ronald Rivest, un homme possédant un sourire bien étrange...
 
 Pour générer cette clé vous pouvez exécuter `gpg --full-generate-key`. Il vous sera posé plusieurs questions :
 
@@ -384,7 +443,7 @@ git config --global user.signingkey A461949069AD05045E0B6BDF5448E6BB6E2BC82D
 
 ## GitHub
 
-[GitHub](https://github.com/) est une plateforme internet pour les développeurs permettant le partage et la collaboration de projets *open-source*. Nous avons vu plus haut que le code source de la calculatrice Windows est sur GitHub de même que plus de 10'000'000 d'utilisateurs et de 44'000'000 de projets. Étant donné que cet outil est massivement utilisé dans le développement logiciel, il est bon que tout étudiant en ingénierie soit familiarisé avec. Aussi, les travaux pratiques utiliseront le plus souvent Git et GitHub.
+[GitHub](https://github.com/) est une plateforme internet pour les développeurs permettant le partage et la collaboration de projets *open-source*. Nous avons vu plus haut que le code source de la calculatrice Windows est sur GitHub de même que plus de 10'000'000 d'utilisateurs et de 44'000'000 de projets. Étant donné que cet outil est massivement utilisé dans le développement logiciel, il est bon que tout-e étudiant-e en ingénierie soit familiarisé-e avec. Aussi, les travaux pratiques utiliseront le plus souvent Git et GitHub.
 
 ### Création d'un compte
 
@@ -392,8 +451,8 @@ Avant toute chose, et si ce n'est pas déjà fait, il vous faut créer un compte
 
 1. Allez sur [GitHub](https://github.com/)
 2. Sélectionnez `Sign Up` et créer un compte GitHub.
-3. Choisissez un `username` à votre convenance. Pour simplifier le travail du professeur, utilisez `prenom-nom` en **minuscule** et avec un tiret. De plus, c'est la convention d'usage de nommer en minuscule les mots séparés par des tirets (On appelle ça le kebab-case à l'image de mots en prise sur une pique de fer).
-4. Utilisez (dans la mesure du possible) votre e-mail de la HEIG-VD afin de bénécifier des avantages du Campus Program.
+3. Choisissez un `username` à votre convenance. Pour simplifier le travail du professeur, utilisez `prenom-nom` en **minuscule** et avec un tiret. De plus, c'est la convention d'usage de nommer en minuscule les mots séparés par des tirets (On appelle ça le kebab-case à l'image de mots en transpercés par une pique de fer).
+4. Utilisez (dans la mesure du possible) votre e-mail de la HEIG-VD afin de bénéficier des avantages du Campus Program.
 
 ### Déploiement des clés
 
@@ -406,7 +465,7 @@ Vous rappelez-vous, nous avions créé une clé `SSH` pour sécuriser nos transa
    ```text
    ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC3RiOdvxC/+qW0IDpb0UGPFgFOMqKLzzJ
    MxRLNbRN2QIcCvLbLUI0UmzOYvLoawXtmv3W3N+kvVCKc/ED+hAOorx1P2ZaFbyzim6PjBU
-   0tBGKWZoN5DsMfy4xo7h1IO5uugFjC7KyDLfCUk+1gAuiDDYy2hLZn+Agfh9oG6YONVEYDX+OZeNK0UhwNahZxjHWQK0No4nvK9Al0IpChY5Y3Kz+shHtYYNXiFtYSgz86BbiAwjzkIh32
+   0tBGKWZoN5Ds4rujNo7h1IO5uugFjC7KyDLfCUk+1gAuiDDYy2hLZn+Agfh9oG6YONVEYDX+OZeNK0UhwNahZxjHWQK0No4nvK9Al0IpChY5Y3Kz+shHtYYNXiFtYSgz86BbiAwjzkIh32
    wAa349VT4FmVWlSyVX0c2ZlwEUogXfKrM3IFjH+bqOwKCWL1BjNdi/geJ9tlRTiy4lpa5AW
    rdHCpz7NuBfXbaMjEjgH doc@hill-valley
    ```
@@ -430,7 +489,7 @@ Copiez l'ensemble du texte y compris les `-----BEGIN PGP...` et `-----END PGP...
 
 #### Précisions sur toutes ces clés
 
-Votre identifiant GitHub (login/password) vous permet d'accéder au site internet de GitHub et de protéger son accès. La clé SSH permet d'échanger des données de façon sécurisée entre votre ordinateur et GitHub sans devoir entrer votre mot de passe à chaque fois. Cela sera utile pour le rendu de labos. Enfin, la clé GPG permet de signer numériquement les transactions que vous ferez avec GitHub, ce qui est optionnel bien entendu.
+Votre identifiant GitHub (login/password) vous permet d'accéder au site internet de GitHub et de protéger son accès. La clé SSH permet d'échanger des données de façon sécurisée entre votre ordinateur et GitHub sans devoir entrer votre mot de passe à chaque fois. C'est une sorte de contrat tacite. Cela sera utile pour le rendu de labos. Enfin, la clé GPG permet de signer numériquement les transactions que vous ferez avec GitHub, ce qui est optionnel bien entendu.
 
 Votre clé SSH vous permet aussi d'accéder à d'autres ordinateurs à distance depuis Linux (par exemple un Raspberry PI), elle n'est pas uniquement dédiée à Git. Votre clé GPG aussi peut être utilisée pour d'autres applications. Vous pouvez par exemple chiffrer des documents, créer des messages secrets, etc.
 
@@ -468,6 +527,8 @@ Par la suite, les énoncés des travaux pratiques seront accompagnés de code so
 3. Naviguer dans ce répertoire avec `cd info1-labo-00`
 4. Ouvrez le projet avec Visual Studio Code avec `code .` (n'oubliez pas le point)
 
+C'est principalement ces commandes que vous répéterez tout au long du semestre : `git clone`, `cd`, `code .`.
+
 ## Résumé
 
 Bravo, vous venez de terminer ce premier travail pratique. Durant toute la procédure, vous avez pu :
@@ -480,5 +541,5 @@ Bravo, vous venez de terminer ce premier travail pratique. Durant toute la proc�
 - Créer un compte sur GitHub
 - Créer une clé SSH et éventuellement GPG
 - Installer Microsoft Visual Studio Code (VsCode)
-- Vu que la Calculatrice Windows est open-source et qu'elle renferme de nombreuses fonctionnalités intéressantes
+- Observer que la Calculatrice Windows est open-source et qu'elle renferme de nombreuses fonctionnalités intéressantes
 - Exécuter des programmes sous Linux comme `cowsay`
