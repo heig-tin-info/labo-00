@@ -86,7 +86,11 @@ Une fois le travail terminé (notez bien ce point, car ce sera le dernier à fai
 
 ### Customisation de l'explorateur de fichiers
 
-Par défaut, Windows est optimisé pour le profane, il est essentiel pour l'ingénieur de modifier quelques options pour améliorer son confort de travail. Pour ce faire, il vous est demandé de modifier les options de l'explorateur de fichiers. Rendez-vous dans les options de dossier, puis dans l'onglet `Affichage` et décochez l'option suivante :
+Par défaut, Windows est optimisé pour le profane, il est essentiel pour l'ingénieur de modifier quelques options pour améliorer son confort de travail. Pour ce faire, il vous est demandé de modifier les options de l'explorateur de fichiers.
+
+![options](assets/options.png)
+
+Rendez-vous dans les options de dossier, puis dans l'onglet `Affichage` et décochez l'option suivante :
 
 - [ ] Cachez les extensions des fichiers connus.
 
@@ -465,7 +469,8 @@ Vous rappelez-vous, nous avions créé une clé `SSH` pour sécuriser nos transa
    ```text
    ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC3RiOdvxC/+qW0IDpb0UGPFgFOMqKLzzJ
    MxRLNbRN2QIcCvLbLUI0UmzOYvLoawXtmv3W3N+kvVCKc/ED+hAOorx1P2ZaFbyzim6PjBU
-   0tBGKWZoN5Ds4rujNo7h1IO5uugFjC7KyDLfCUk+1gAuiDDYy2hLZn+Agfh9oG6YONVEYDX+OZeNK0UhwNahZxjHWQK0No4nvK9Al0IpChY5Y3Kz+shHtYYNXiFtYSgz86BbiAwjzkIh32
+   0tBGKWZoN5Ds4rujNo7h1IO5uugFjC7KyDLfCUk+1gAuiDDYy2hLZn+Agfh9oG6YONVEYDX
+   rOZeNK0UhwNahZxjHWQK0No4nvK9Al0IpChY5Y3Kz+shHtYYNXiFtYSgz86BbiAwjzkIh32
    wAa349VT4FmVWlSyVX0c2ZlwEUogXfKrM3IFjH+bqOwKCWL1BjNdi/geJ9tlRTiy4lpa5AW
    rdHCpz7NuBfXbaMjEjgH doc@hill-valley
    ```
