@@ -10,7 +10,7 @@ C'est cet outil, WSL, qui sera proposé pour le semestre. Les utilisateurs de [m
 
 Linux, macOS ou Windows sont des [systèmes d'exploitation](https://fr.wikipedia.org/wiki/Syst%C3%A8me_d%27exploitation) qui offrent une interface utilisateur (graphique et en ligne de commande), permettant d'exécuter des programmes et de se connecter à des réseaux informatiques.
 
-Linux et macOS sont des systèmes dit **POSIX**, c'est-à-dire qu'ils respectent tous une norme bien précise sur le fonctionnement du système d'exploitation. Cette norme étant très appréciée, elle est utilisée dans beaucoup de systèmes : centres de calculs, serveur web, serveurs de fichiers, satellites, voitures Tesla, fusées spatiales, téléphones mobiles (Android et iPhone) et bien d'autres.
+Linux et macOS sont des systèmes dits **POSIX**, c'est-à-dire qu'ils respectent tous une norme bien précise sur le fonctionnement du système d'exploitation. Cette norme étant très appréciée, elle est utilisée dans beaucoup de systèmes : centres de calculs, serveur web, serveurs de fichiers, satellites, voitures Tesla, fusées spatiales, téléphones mobiles (Android et iPhone) et bien d'autres.
 
 Le système d'exploitation Windows est quant à lui très apprécié pour les travaux de bureautiques et les terminaux graphiques. Beaucoup de développeurs utilisent aujourd'hui Windows conjointement avec Linux, c'est ce que nous allons faire durant ce semestre dans ce cours d'introduction à la programmation en C.
 
@@ -37,9 +37,9 @@ Une fois connecté sur votre ordinateur, expérimentez les points suivants :
 6. La combinaison de touches `<WIN>`+`<L>` verrouille votre ordinateur.
 7. La combinaison de touches `<WIN>`+`<MAJ>`+`<S>` fait apparaître l'outil de capture d'écran.
 
-Les raccourcis claviers sont nombreux, et ils améliorent le confort de travail. Plus vous en connaissez, meilleure est votre productivité. Plus vous en connaissez, mieux vous structurez votre esprit à comprendre les machines. Au début c'est contraignant, puis cela peut devenir ludique.
+Les raccourcis clavier sont nombreux, et ils améliorent le confort de travail. Plus vous en connaissez, la meilleure est votre productivité. Plus vous en connaissez, mieux vous structurez votre esprit à comprendre les machines. Au début c'est contraignant, puis cela peut devenir ludique.
 
->Pour plus de rigueur, nous définissions ici comment sont notés les raccourcis clavier : une séquence au clavier peut être exprimée comme une suite de combinaisons de touches. Les chevrons `<>` sont ici utilisés pour différentier un ou des caractères d'une touche du clavier. Par exemple, la touche de tabulation (↹) sera indiquée `<TAB>` alors que `TAB` correspondra à la frappe des trois caractères sur le clavier : `T`, `A` et `B`. Lorsque des touches sont séparées par le signe `+` il s'agit alors d'une combinaison de touches. C'est-à -dire le maintien simultané des touches concernées. Dès lors `<CTRL>`+`<R>` correspond à maintenir la touche **contrôle** pendant que la touche `R` est appuyée. Sur internet et dans de nombreuses documentations, cette notation est souvent abrégée et ce même raccourci peut s'écrire `<C-R>`. À vous d'interprêter convenablement ces écritures selon le contexte.
+>Pour plus de rigueur, nous définissions ici comment sont notés les raccourcis clavier : une séquence au clavier peut être exprimée comme une suite de combinaisons de touches. Les chevrons `<>` sont ici utilisés pour différentier un ou des caractères d'une touche du clavier. Par exemple, la touche de tabulation (↹) sera indiquée `<TAB>` alors que `TAB` correspondra à la frappe des trois caractères sur le clavier : `T`, `A` et `B`. Lorsque des touches sont séparées par le signe `+` il s'agit alors d'une combinaison de touches. C'est-à-dire le maintien simultané des touches concernées. Dès lors `<CTRL>`+`<R>` correspond à maintenir la touche **contrôle** pendant que la touche `R` est appuyée. Sur internet et dans de nombreuses documentations, cette notation est souvent abrégée et ce même raccourci peut s'écrire `<C-R>`. À vous d'interpréter convenablement ces écritures selon le contexte.
 
 Avez-vous compris ? Voici deux séquences de touches, que font-elles ?
 
@@ -57,8 +57,8 @@ Soyez succinct, votre rapport doit être précis et ne mentionner que l'essentie
 Répondez à ces questions succinctement dans votre rapport pour me montrer que vous avez compris :
 
 1. C'est quoi **POSIX** ?
-2. Quel est le raccourcis Windows pour exécuter rapidement un programme ?
-3. Quel est le raccourcis Windows pour verrouiller l'ordinateur ?
+2. Quel est le raccourci Windows pour exécuter rapidement un programme ?
+3. Quel est le raccourci Windows pour verrouiller l'ordinateur ?
 
 ## Rendu du laboratoire
 
@@ -80,9 +80,9 @@ Durant ce travail pratique, vous l'avez maintenant compris, plusieurs documents 
 └── two-pies.txt
 ```
 
-Notez la notion de hiérarchie, le dossier `labo-00` contient plusieurs fichiers. Cette hiérarchie est elle même située dans une autre hiérarchie, celle de votre dossier personnel. C'est ce que l'on appelle un arbre de fichiers, ou arborescence.
+Notez la notion de hiérarchie, le dossier `labo-00` contient plusieurs fichiers. Cette hiérarchie est elle-même située dans une autre hiérarchie, celle de votre dossier personnel. C'est ce que l'on appelle un arbre de fichiers, ou arborescence.
 
-Une fois le travail terminé (notez bien ce point, car ce sera le dernier à faire avant le rendu du laboratoire) : crééez une archive [compressée](https://www.google.com/search?q=windows+how+to+compress+folder) de ce dossier puis envoyez votre archive comprimée par e-mail à votre professeur.
+Une fois le travail terminé (notez bien ce point, car ce sera le dernier à faire avant le rendu du laboratoire) : créer une archive [compressée](https://www.google.com/search?q=windows+how+to+compress+folder) de ce dossier puis envoyez votre archive comprimée par e-mail à votre professeur.
 
 ### Customisation de l'explorateur de fichiers
 
@@ -98,7 +98,7 @@ Elle vous permet de voir les fichiers et dossiers cachés, qui sont des fichiers
 
 ### Microsoft Word
 
-Microsoft Office est la suite de bureautique la plus utilisée dans l'industrie, que vous la détestiez ou l'adoreriez, vous serez inévitablement amené à l'utiliser dans votre future carrière professionnelle. À cette fin, il vous est demandé de rédiger un compte rendu Microsoft Word en respectant les étapes suivantes :
+Microsoft Office est la suite de bureautique la plus utilisée dans l'industrie, que vous la détestiez ou l'adoriez, vous serez inévitablement amené à l'utiliser dans votre future carrière professionnelle. À cette fin, il vous est demandé de rédiger un compte rendu Microsoft Word en respectant les étapes suivantes :
 
 1. Démarrer Microsoft Word avec `<WIN>+<R> winword <ENTER>`.
 2. Créez un nouveau document.
@@ -115,9 +115,9 @@ Microsoft Office est la suite de bureautique la plus utilisée dans l'industrie,
 10. Gardez votre document ouvert pour la suite des opérations.
 11. ... Une fois toutes les autres étapes terminées, sauvegardez votre rapport dans votre dossier de rendu.
 
-Notez au passage que ce fichier porte l'extension `.docx`, c'est une extension de fichier Microsoft Word. Le `x` signifie que le fichier utilise le format `XML` compressé pour stocker les données, un format unifié avec les nouvelles version de Word. En réalité ce fichier est une archive qui contient une arborescence d'autres fichiers qui peuvent être ouvert avec un éditeur de texte.
+Notez au passage que ce fichier porte l'extension `.docx`, c'est une extension de fichier Microsoft Word. Le `x` signifie que le fichier utilise le format `XML` compressé pour stocker les données, un format unifié avec les nouvelles version de Word. En réalité ce fichier est une archive qui contient une arborescence d'autres fichiers qui peuvent être ouverts avec un éditeur de texte.
 
-Essayez par exemple de créer un fichier Word qui contient la phrase `les biscuits aux beurre`. Sauvegardez ce fichier avec le nom `biscuit.docx`. Puis, renommez le fichier avec l'extension `.zip`. Vous constatez que l'icône du fichier à changé. En ouvrant ce fichiers vous aurez une arborescence de l'archive compressée. Jetez un oeil au fichier `document.xml` et vous verrez que le texte est bien présent :
+Essayez par exemple de créer un fichier Word qui contient la phrase `les biscuits aux beurre`. Sauvegardez ce fichier avec le nom `biscuit.docx`. Puis, renommez le fichier avec l'extension `.zip`. Vous constatez que l'icône du fichier a changé. En ouvrant ce fichier, vous aurez une arborescence de l'archive compressée. Jetez un œil au fichier `document.xml` et vous verrez que le texte est bien présent :
 
 ```xml
 <w:p w14:paraId="0F5C4F6A"
@@ -137,7 +137,7 @@ Notepad est un éditeur de texte très moyenâgeux, mais diantrement utile.
 ![notepad](assets/nodepad.png)
 
 1. Ouvrez l'éditeur de texte `notepad` depuis `<WIN>+<R> notepad <ENTER>`
-2. Saississez le programme C suivant (sans oublier de changer le nom de l'auteur...) :
+2. Saisissez le programme C suivant (sans oublier de changer le nom de l'auteur...) :
 
    ```c
    /**
@@ -158,7 +158,7 @@ Notepad est un éditeur de texte très moyenâgeux, mais diantrement utile.
 
 Vous ne savez pas répondre au point 4 ? Utilisez Google, c'est votre meilleur ami.
 
-**Rappel:** pour vous assurer que les fichiers ont la bonne extension (les caractères qui suivent le `.` (point), veillez à activer l'option Windows : "Ne pas masquer les extensions des fichiers dont le type est connu". Pour le faire, rendez-vous sous Google et essayer par exemple : "montrer extension fichier windows 10".
+**Rappel:** pour vous assurer que les fichiers ont la bonne extension (les caractères qui suivent le `.` (point), veillez à activer l'option Windows : "Ne pas masquer les extensions des fichiers dont le type est connu". Pour le faire, rendez-vous sous Google et essayez par exemple : "montrer extension fichier windows 10".
 
 Au passage, bravo, vous venez d'écrire votre premier programme C à l'école d'ingénieurs. Vous êtes un vrai hacker !
 
@@ -244,7 +244,7 @@ Créez un nouveau fichier `anaphore.txt` et écrivez-y l'anaphore célèbre de A
 > Vingt et trois étrangers et nos frères pourtant
 > Vingt et trois amoureux de vivre à en mourir
 
-Vous constatez que le mot `trois` apparaît `trois` fois. Vous pouvez placer votre curseur sur ce mot et utiliser le raccourci `<CTRL>+<D>` pour sélectionner les autres occurrences de ce mot. Vous pouvez ensuite les modifier en même temps. Essayez de changer le mot `trois` en `quatre` et constatez que les autres occurrences sont modifiées en même temps. Félicitation vous venez d'utiliser l'option multi-curseurs de Visual Studio Code.
+Vous constatez que le mot `trois` apparaît `trois` fois. Vous pouvez placer votre curseur sur ce mot et utiliser le raccourci `<CTRL>+<D>` pour sélectionner les autres occurrences de ce mot. Vous pouvez ensuite les modifier en même temps. Essayez de changer le mot `trois` en `quatre` et constatez que les autres occurrences sont modifiées en même temps. Félicitation, vous venez d'utiliser l'option multicurseurs de Visual Studio Code.
 
 ### WSL
 
@@ -262,11 +262,11 @@ Une fois WSL et Ubuntu installés effectuer les opérations suivantes :
 1. Exécutez le programme `Ubuntu` maintenant installé
 2. Après quelques instants, il vous est demandé de saisir un nom d'utilisateur puis un mot de passe, choisissez un mot de passe assez simple, il n'est pas très important.
 
-**Important** : Ne sautez pas cette étape. Créez un utilisateur par exemple vos initials.
+**Important** : Ne sautez pas cette étape. Créez un utilisateur par exemple vos initiales.
 
 ### Windows Terminal
 
-Le programme `cmd.exe` est plus vieux que vous et depuis Microsoft à développé un nouveau terminal nommé **Windows Terminal**. Pour l'installer utilisez le **Windows Store** (touche Windows puis `store`).
+Le programme `cmd.exe` est plus vieux que vous et depuis Microsoft à développé un nouveau terminal nommé **Windows Terminal**. Pour l'installer, utilisez le **Windows Store** (touche Windows puis `store`).
 
 ![wt](assets/wt.png)
 
@@ -282,7 +282,7 @@ Depuis l'invité de commande qui s'offre à vous :
 
 1. Mettre à jour la liste des logiciels disponibles avec `sudo apt update`
 2. Installer le programme `cowsay` (vache qui parle) avec `sudo apt install cowsay`
-3. Exécuter `cowsay` suivi d'une phrase de votre choix, p.ex. :
+3. Exécuter `cowsay` suivi d'une phrase de votre choix, p. ex. :
 
    ```text
    $ cowsay Meuuuuuh
@@ -351,7 +351,7 @@ Notez au passage la structure de ces commandes :
 4. `user.name` c'est le paramètre de configuration que vous voulez modifier
 5. `"Emmet Lathrop Brown"` c'est une chaîne de caractère comportant le prénom suivi du nom.
 
-> Chacun des éléments passés après le nom du programme sont nommé des **arguments**, et les arguments qui commencent par un tiret simple ou double sont nommés des **options**.
+> Chacun des éléments passés après le nom du programme est nommé des **arguments**, et les arguments qui commencent par un tiret simple ou double sont nommés des **options**.
 
 #### Identité SSH
 
@@ -414,9 +414,9 @@ Maintenant, si vous voulez *impressionner votre professeur et gagner des points 
 
 #### Clé de signature GPG (optionnel, si vous êtes un hacker)
 
-Ce point est optionnel, mais par soucis de cohérence avec des besoins de sécurité que vous rencontrerez peut-être en industrie, il vous est possible de générer une autre clé. Celle-ci permet de signer numériquement des documents et ainsi attester que c'est bien vous. Ce système de signature numérique est basé sur l'algorithme [RSA](https://fr.wikipedia.org/wiki/Chiffrement_RSA) inventé en partie par Ronald Rivest, un homme possédant un sourire bien étrange...
+Ce point est optionnel, mais par souci de cohérence avec des besoins de sécurité que vous rencontrerez peut-être en industrie, il vous est possible de générer une autre clé. Celle-ci permet de signer numériquement des documents et ainsi attester que c'est bien vous. Ce système de signature numérique est basé sur l'algorithme [RSA](https://fr.wikipedia.org/wiki/Chiffrement_RSA) inventé en partie par Ronald Rivest, un homme possédant un sourire bien étrange...
 
-Pour générer cette clé vous pouvez exécuter `gpg --full-generate-key`. Il vous sera posé plusieurs questions :
+Pour générer cette clé, vous pouvez exécuter `gpg --full-generate-key`. Il vous sera posé plusieurs questions :
 
 1. Quelle clé voulez-vous ? Nous voulons `RSA` (réponse 1)
 2. Quelle est la taille de la clé ? 3072 bits sont suffisants pour décourager la NSA
@@ -443,7 +443,7 @@ git config --global user.signingkey A461949069AD05045E0B6BDF5448E6BB6E2BC82D
 
 ## GitHub
 
-[GitHub](https://github.com/) est une plateforme internet pour les développeurs permettant le partage et la collaboration de projets *open-source*. Nous avons vu plus haut que le code source de la calculatrice Windows est sur GitHub de même que plus de 10'000'000 d'utilisateurs et de 44'000'000 de projets. Étant donné que cet outil est massivement utilisé dans le développement logiciel, il est bon que tout-e étudiant-e en ingénierie soit familiarisé-e avec. Aussi, les travaux pratiques utiliseront le plus souvent Git et GitHub.
+[GitHub](https://github.com/) est une plateforme internet pour les développeurs permettant le partage et la collaboration de projets *open source*. Nous avons vu plus haut que le code source de la calculatrice Windows est sur GitHub de même que plus de 10'000'000 d'utilisateurs et de 44'000'000 de projets. Étant donné que cet outil est massivement utilisé dans le développement logiciel, il est bon que tout-e étudiant-e en ingénierie soit familiarisé-e avec. Aussi, les travaux pratiques utiliseront le plus souvent Git et GitHub.
 
 ### Création d'un compte
 
@@ -541,5 +541,5 @@ Bravo, vous venez de terminer ce premier travail pratique. Durant toute la proc�
 - Créer un compte sur GitHub
 - Créer une clé SSH et éventuellement GPG
 - Installer Microsoft Visual Studio Code (VsCode)
-- Observer que la Calculatrice Windows est open-source et qu'elle renferme de nombreuses fonctionnalités intéressantes
+- Observer que la Calculatrice Windows est open source et qu'elle renferme de nombreuses fonctionnalités intéressantes
 - Exécuter des programmes sous Linux comme `cowsay`
