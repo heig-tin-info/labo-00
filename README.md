@@ -48,7 +48,7 @@ Avez-vous compris ? Voici deux séquences de touches, que font-elles ?
 <W-R> notepad <ENTER> <C-V> <C-S> two-pies.txt <ENTER>
 ```
 
-Exécutez `%userprofile%` depuis le menu *exécuter* (`<W-E>`), l'explorateur de fichiers s'ouvre. Quel est ce dossier ? Si vous ne savez pas, cherchez une référence utile sur internet et intégrez là à votre rapport.
+Exécutez `%userprofile%` depuis le menu *exécuter* (`<W-R>`), l'explorateur de fichiers s'ouvre. Quel est ce dossier ? Si vous ne savez pas, cherchez une référence utile sur internet et intégrez là à votre rapport.
 
 ![run](assets/run.png)
 
