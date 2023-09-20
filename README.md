@@ -1,18 +1,26 @@
 # Prise en main de l'ordinateur
 
-**Durée: 2x45 minutes + travail à la maison**
+| Type          | Description |
+| ------------- | ----------- |
+| Durée         | 2x45 minutes + Travail à la maison |
+| Rendu         | 1x archive zip                    |
+| Format | Travail individuel |
+| Évaluation    | Sur la conformité du rapport et de l'archive |
+
 
 ## Introduction
 
-Ce travail pratique permet à l'étudiant la prise en main avec Microsoft Windows et les outils qui seront utilisés durant le semestre. Le cours étant essentiellement axé ligne de commande, il est plus naturel de s'orienter davantage sur un environnement de travail idoine. Depuis 2016, Microsoft offre un produit nommé **Windows Subsystem for Linux**, de son petit nom **WSL**. Il s'agit d'une [distribution Linux](https://fr.wikipedia.org/wiki/Distribution_Linux) tournant dans Windows. Elle présente l'avantage d'être bien normalisée (respect du standard [POSIX](https://fr.wikipedia.org/wiki/POSIX)), et offre à l'étudiant des bases solides pour plus tard développer sur [Raspberry PI](https://fr.wikipedia.org/wiki/Raspberry_Pi) et d'autres [systèmes embarqués](https://fr.wikipedia.org/wiki/Syst%C3%A8me_embarqu%C3%A9).
+Ce travail pratique permet à l'étudiant la prise en main avec Microsoft Windows et les outils qui seront utilisés durant le semestre. Le cours étant essentiellement axé ligne de commande, il est plus naturel de s'orienter davantage sur un environnement de travail idoine.
+
+Depuis 2016, Microsoft offre un produit nommé **Windows Subsystem for Linux**, de son petit nom **WSL**. Il s'agit d'une [distribution Linux](https://fr.wikipedia.org/wiki/Distribution_Linux) tournant dans Windows. Elle présente l'avantage d'être bien normalisée (respect du standard [POSIX](https://fr.wikipedia.org/wiki/POSIX)), et offre des bases solides pour plus tard développer sur [Raspberry PI](https://fr.wikipedia.org/wiki/Raspberry_Pi) et d'autres [systèmes embarqués](https://fr.wikipedia.org/wiki/Syst%C3%A8me_embarqu%C3%A9).
 
 C'est cet outil, WSL, qui sera proposé pour le semestre. Les utilisateurs de [macOS](https://fr.wikipedia.org/wiki/MacOS) et de [Linux](https://fr.wikipedia.org/wiki/Linux) n'auront pas besoin de cet outil et pourront développer sans machine virtuelle Windows.
 
-Linux, macOS ou Windows sont des [systèmes d'exploitation](https://fr.wikipedia.org/wiki/Syst%C3%A8me_d%27exploitation) qui offrent une interface utilisateur (graphique et en ligne de commande), permettant d'exécuter des programmes et de se connecter à des réseaux informatiques.
+Linux, macOS ou Windows sont des [systèmes d'exploitation](https://fr.wikipedia.org/wiki/Syst%C3%A8me_d%27exploitation) qui disposent d'une interface utilisateur (graphique et en ligne de commande), supportant l'exécution de programmes et la connection à des réseaux informatiques.
 
 Linux et macOS sont des systèmes dits **POSIX**, c'est-à-dire qu'ils respectent tous une norme bien précise sur le fonctionnement du système d'exploitation. Cette norme étant très appréciée, elle est utilisée dans beaucoup de systèmes : centres de calculs, serveur web, serveurs de fichiers, satellites, voitures Tesla, fusées spatiales, téléphones mobiles (Android et iPhone) et bien d'autres.
 
-Le système d'exploitation Windows est quant à lui très apprécié pour les travaux de bureautiques et les terminaux graphiques. Beaucoup de développeurs utilisent aujourd'hui Windows conjointement avec Linux, c'est ce que nous allons faire durant ce semestre dans ce cours d'introduction à la programmation en C.
+Le système d'exploitation Windows est quant à lui très apprécié pour les travaux de bureautiques et les terminaux graphiques. De nombreux développeurs utilisent aujourd'hui Windows conjointement avec Linux, c'est ce que nous allons faire durant ce semestre dans ce cours d'introduction à la programmation en C.
 
 ## Objectifs
 
@@ -23,9 +31,11 @@ Les objectifs de ce travail pratique sont les suivants :
 - appliquer la marche à suivre pour obtenir et rendre un travail pratique ;
 - découvrir et installer les outils de développement utiles pour ce cours.
 
+Notons que ceci implique l'écriture d'un rapport... Alors pensez à noter ce que vous faites.
+
 ## Prise en main de votre ordinateur
 
-Démarrez votre ordinateur et connectez-vous au réseau de l'école en utilisant vos identifiants personnels [AAI](https://aai-admin.hes-so.ch). Votre login est votre prénom et votre nom séparé par un point. Votre nom de famille pourrait être tronqué si l'ensemble dépasse 13 caractères. Votre mot de passe c'est... bah votre mot de passe... Il se pourrait que vous deviez préfixer votre login par le nom du domaine informatique de l'école (`einet.ad.eivd.ch`) ou simplement `einet`. Ainsi vous pourriez avoir quelque chose comme : `einet\yves.chevalli`.
+Démarrez votre ordinateur et connectez-vous au réseau de l'école en utilisant vos identifiants personnels. Votre login est votre prénom et votre nom séparé par un point. Votre nom de famille pourrait être tronqué si l'ensemble dépasse 13 caractères. Votre mot de passe c'est... bah votre mot de passe... Il se pourrait que vous deviez préfixer votre login par le nom du domaine informatique de l'école (`einet.ad.eivd.ch`) ou simplement `einet`. Ainsi vous pourriez avoir quelque chose comme : `einet\yves.chevalli`.
 
 Une fois connecté sur votre ordinateur, expérimentez les points suivants :
 
@@ -59,6 +69,7 @@ Répondez à ces questions succinctement dans votre rapport pour me montrer que 
 1. C'est quoi **POSIX** ?
 2. Quel est le raccourci Windows pour exécuter rapidement un programme ?
 3. Quel est le raccourci Windows pour verrouiller l'ordinateur ?
+4. RTFM est l'acronyme de quoi et pourquoi pensez-vous que c'est important ?
 
 ## Rendu du laboratoire
 
@@ -82,7 +93,9 @@ Durant ce travail pratique, vous l'avez maintenant compris, plusieurs documents 
 
 Notez la notion de hiérarchie, le dossier `labo-00` contient plusieurs fichiers. Cette hiérarchie est elle-même située dans une autre hiérarchie, celle de votre dossier personnel. C'est ce que l'on appelle un arbre de fichiers, ou arborescence.
 
-Une fois le travail terminé (notez bien ce point, car ce sera le dernier à faire avant le rendu du laboratoire) : créer une archive [compressée](https://www.google.com/search?q=windows+how+to+compress+folder) de ce dossier puis envoyez votre archive comprimée par e-mail à votre professeur.
+Une fois le travail terminé (notez bien ce point, car ce sera le dernier à faire avant le rendu du laboratoire) : créer une archive [compressée](https://www.google.com/search?q=windows+how+to+compress+folder) de ce dossier puis déposez votre archive sur Teams/Documents/General/Labo-00/nom-prenom.zip
+
+*Important* : le nom de votre archive doit être votre nom et prénom séparés par un tiret. Par exemple : `chevallier-yves.zip`. En cas de problème vous pouvez aussi envoyer votre archive par e-mail.
 
 ### Customisation de l'explorateur de fichiers
 
@@ -264,13 +277,13 @@ Pour installer ce système, vous avez plusieurs solutions ; voici la première :
 Une fois WSL et Ubuntu installés effectuer les opérations suivantes :
 
 1. Exécutez le programme `Ubuntu` maintenant installé
-2. Après quelques instants, il vous est demandé de saisir un nom d'utilisateur puis un mot de passe, choisissez un mot de passe assez simple, il n'est pas très important.
+2. Après quelques instants, il vous est demandé de saisir un nom d'utilisateur puis un mot de passe, choisissez un mot de passe assez simple, il n'est pas très important. Attention, le mot de passe ne s'affiche pas lorsque vous le saisissez, c'est normal et c'est pour des raisons de sécurité.
 
 **Important** : Ne sautez pas cette étape. Créez un utilisateur par exemple vos initiales.
 
 ### Windows Terminal
 
-Le programme `cmd.exe` est plus vieux que vous et depuis Microsoft à développé un nouveau terminal nommé **Windows Terminal**. Pour l'installer, utilisez le **Windows Store** (touche Windows puis `store`).
+Le programme `cmd.exe` est plus vieux que vous et depuis Microsoft à développé un nouveau terminal nommé **Windows Terminal**. Pour l'installer, utilisez le **Windows Store** (touche Windows puis `store`). Si vous êtes sous Windows 11, Windows Terminal est déjà installé.
 
 ![wt](assets/wt.png)
 
@@ -336,7 +349,7 @@ Ce que vous devez retenir c'est que:
 
 ### Git
 
-Git est un logiciel de gestion de version très utilisé par les développeurs logiciels. Il est utilisé dans ce cours comme outil principal pour accéder aux énoncés de laboratoire et soumettre vos modifications. Avantageusement, Git est déjà installé avec Ubuntu 20.04, mais nous devons le configurer avant de pouvoir l'utiliser.
+Git est un logiciel de gestion de version très utilisé par les développeurs logiciels. Il est utilisé dans ce cours comme outil principal pour accéder aux énoncés de laboratoire et soumettre vos modifications. Avantageusement, Git est déjà installé avec Ubuntu 22.04, mais nous devons le configurer avant de pouvoir l'utiliser.
 
 #### Configuration de Git
 
@@ -447,7 +460,7 @@ git config --global user.signingkey A461949069AD05045E0B6BDF5448E6BB6E2BC82D
 
 ## GitHub
 
-[GitHub](https://github.com/) est une plateforme internet pour les développeurs permettant le partage et la collaboration de projets *open source*. Nous avons vu plus haut que le code source de la calculatrice Windows est sur GitHub de même que plus de 10'000'000 d'utilisateurs et de 44'000'000 de projets. Étant donné que cet outil est massivement utilisé dans le développement logiciel, il est bon que tout-e étudiant-e en ingénierie soit familiarisé-e avec. Aussi, les travaux pratiques utiliseront le plus souvent Git et GitHub.
+[GitHub](https://github.com/) est une plateforme internet pour les développeurs permettant le partage et la collaboration de projets *open source*. Nous avons vu plus haut que le code source de la calculatrice Windows est sur GitHub de même que plus de 100'000'000 d'utilisateurs et de 300'000'000 de projets. Étant donné que cet outil est massivement utilisé dans le développement logiciel, il est bon que tout-e étudiant-e en ingénierie soit familiarisé-e avec. Aussi, les travaux pratiques utiliseront le plus souvent Git et GitHub.
 
 ### Création d'un compte
 
