@@ -9,7 +9,36 @@
 
 ## Table des matières <!-- omit in toc -->
 
-<!-- TOC -->
+- [Introduction](#introduction)
+- [Objectifs](#objectifs)
+- [Prise en main de votre ordinateur](#prise-en-main-de-votre-ordinateur)
+- [Rendu du laboratoire](#rendu-du-laboratoire)
+- [Customisation de l'explorateur de fichiers](#customisation-de-lexplorateur-de-fichiers)
+- [Microsoft Word](#microsoft-word)
+- [Notepad](#notepad)
+- [Calculatrice Windows](#calculatrice-windows)
+- [Installation des outils de développement](#installation-des-outils-de-développement)
+  - [Visual Studio Code](#visual-studio-code)
+  - [WSL](#wsl)
+  - [Windows Terminal](#windows-terminal)
+- [Familiarisation avec Linux](#familiarisation-avec-linux)
+  - [Git](#git)
+    - [Configuration de Git](#configuration-de-git)
+    - [Identité SSH](#identité-ssh)
+    - [Clé de signature GPG (optionnel, si vous êtes un hacker)](#clé-de-signature-gpg-optionnel-si-vous-êtes-un-hacker)
+- [GitHub](#github)
+  - [Création d'un compte](#création-dun-compte)
+  - [Déploiement des clés](#déploiement-des-clés)
+    - [Déploiement de votre clé publique](#déploiement-de-votre-clé-publique)
+    - [Déploiement de votre clé GPG (optionnel)](#déploiement-de-votre-clé-gpg-optionnel)
+    - [Précisions sur toutes ces clés](#précisions-sur-toutes-ces-clés)
+  - [Découvertes des fonctionnalités de GitHub](#découvertes-des-fonctionnalités-de-github)
+  - [Acceptation de l'invitation](#acceptation-de-linvitation)
+- [Clone du laboratoire](#clone-du-laboratoire)
+- [Livraison du rendu](#livraison-du-rendu)
+- [Dernière étape](#dernière-étape)
+- [Résumé](#résumé)
+
 
 ## Introduction
 
