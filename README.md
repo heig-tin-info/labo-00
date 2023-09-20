@@ -1,4 +1,4 @@
-# Prise en main de l'ordinateur
+# Labo-00 : Prise en main de l'ordinateur <!-- omit in toc -->
 
 | Type          | Description |
 | ------------- | ----------- |
@@ -7,6 +7,9 @@
 | Format | Travail individuel |
 | Évaluation    | Sur la conformité du rapport et de l'archive |
 
+## Table des matières <!-- omit in toc -->
+
+<!-- TOC -->
 
 ## Introduction
 
@@ -29,7 +32,7 @@ Les objectifs de ce travail pratique sont les suivants :
 - découvrir l'environnement Windows et Linux ;
 - savoir lire un intitulé de laboratoire ([oui, oui ce n’est pas si facile](https://en.wikipedia.org/wiki/RTFM)) ;
 - appliquer la marche à suivre pour obtenir et rendre un travail pratique ;
-- découvrir et installer les outils de développement utiles pour ce cours.
+- découvrir et installer les outils de développement utilisés dans ce cours.
 
 Notons que ceci implique l'écriture d'un rapport... Alors pensez à noter ce que vous faites.
 
@@ -75,29 +78,26 @@ Répondez à ces questions succinctement dans votre rapport pour me montrer que 
 
 Durant ce travail pratique, vous l'avez maintenant compris, plusieurs documents seront à rendre. Pour se préparer à ce rendu, commencez tout d'abord par créer un dossier :
 
-1. Dans `Mes Documents` ou sur votre bureau, créez un dossier intitulé `labo-00`.
+1. Dans `Mes Documents` ou sur votre bureau, créez un dossier intitulé `rendu`.
 2. Placez-y le fichier `two-pies.txt` créé plus haut.
 3. Constatez que ce dossier contient maintenant un seul et unique fichier.
 
 *Spoiler alert* : à la fin de ce travail, vous aurez dans votre dossier la structure suivante :
 
 ```text
-.
+./rendu
 ├── README.md
+├── anaphore.txt
+├── document.xml
 ├── hello
 ├── hello.c
 ├── rapport.docx
-├── document.xml
 └── two-pies.txt
 ```
 
-Notez la notion de hiérarchie, le dossier `labo-00` contient plusieurs fichiers. Cette hiérarchie est elle-même située dans une autre hiérarchie, celle de votre dossier personnel. C'est ce que l'on appelle un arbre de fichiers, ou arborescence.
+Notez la notion de hiérarchie, le dossier `rendu` contient plusieurs fichiers. Cette hiérarchie est elle-même située dans une autre hiérarchie, celle de votre dossier personnel. C'est ce que l'on appelle un arbre de fichiers, ou arborescence.
 
-Une fois le travail terminé (notez bien ce point, car ce sera le dernier à faire avant le rendu du laboratoire) : créer une archive [compressée](https://www.google.com/search?q=windows+how+to+compress+folder) de ce dossier puis déposez votre archive sur Teams/Documents/General/Labo-00/nom-prenom.zip
-
-*Important* : le nom de votre archive doit être votre nom et prénom séparés par un tiret. Par exemple : `chevallier-yves.zip`. En cas de problème vous pouvez aussi envoyer votre archive par e-mail.
-
-### Customisation de l'explorateur de fichiers
+## Customisation de l'explorateur de fichiers
 
 Par défaut, Windows est optimisé pour le profane, il est essentiel pour l'ingénieur de modifier quelques options pour améliorer son confort de travail. Pour ce faire, il vous est demandé de modifier les options de l'explorateur de fichiers.
 
@@ -113,7 +113,7 @@ Elle vous permet de voir les extensions des fichiers, ce qui est très utile pou
 
 Elle vous permet de voir les fichiers et dossiers cachés, qui sont des fichiers et dossiers qui ne sont pas affichés par défaut. Par exemple, le fichier `.gitignore` est un fichier caché qui permet de spécifier les fichiers à ignorer dans un dépôt Git. Nous verrons cela plus tard.
 
-### Microsoft Word
+## Microsoft Word
 
 Microsoft Office est la suite de bureautique la plus utilisée dans l'industrie, que vous la détestiez ou l'adoriez, vous serez inévitablement amené à l'utiliser dans votre future carrière professionnelle. À cette fin, il vous est demandé de rédiger un compte rendu Microsoft Word en respectant les étapes suivantes :
 
@@ -147,7 +147,7 @@ Essayez par exemple de créer un fichier Word qui contient la phrase `les biscui
 
 Intégrez ce fichier `document.xml` à votre dossier de rendu.
 
-### Notepad
+## Notepad
 
 Notepad est un éditeur de texte très moyenâgeux, mais diantrement utile.
 
@@ -179,7 +179,7 @@ Vous ne savez pas répondre au point 4 ? Utilisez Google, c'est votre meilleur a
 
 Au passage, bravo, vous venez d'écrire votre premier programme C à l'école d'ingénieurs. Vous êtes un vrai hacker !
 
-### Calculatrice Windows
+## Calculatrice Windows
 
 Commencez pas collecter quelques informations liées à cette calculatrice :
 
@@ -224,8 +224,6 @@ Commencez pas collecter quelques informations liées à cette calculatrice :
 
 ![Calculatrice](assets/calc.png)
 
-## Informatique à la HEIG-VD
-
 ## Installation des outils de développement
 
 À présent, il vous est proposé d'installer quelques outils qui vous seront utiles pour la suite de votre bachelor et peut-être même votre master, et peut-être même plus tard lorsque vous serez dans l'industrie.
@@ -257,11 +255,20 @@ Allez, en avant, installons Visual Studio Code...
 
 Créez un nouveau fichier `anaphore.txt` et écrivez-y l'anaphore célèbre de Aragon (Strophes pour se souvenir):
 
-> Vingt et trois qui donnaient le cœur avant le temps
+> Vingt et trois qui donnaient le coeur avant le temps
 > Vingt et trois étrangers et nos frères pourtant
 > Vingt et trois amoureux de vivre à en mourir
 
 Vous constatez que le mot `trois` apparaît `trois` fois. Vous pouvez placer votre curseur sur ce mot et utiliser le raccourci `<CTRL>+<D>` pour sélectionner les autres occurrences de ce mot. Vous pouvez ensuite les modifier en même temps. Essayez de changer le mot `trois` en `quatre` et constatez que les autres occurrences sont modifiées en même temps. Félicitation, vous venez d'utiliser l'option multicurseurs de Visual Studio Code.
+
+Intégrez le fichier `anaphore.txt` modifié dans votre dossier de rendu.
+
+Utilisez la combinaison `<CTRL>+<SHIFT>+<X>` pour afficher les extensions et installez les extensions suivantes :
+
+- C/C++ Extension Pack
+- Clang-Format
+- WSL
+- Markdown All in One
 
 ### WSL
 
@@ -291,7 +298,7 @@ Pour exécuter ce programme, vous pouvez simplement faire `<W-R> wt <ENTER>`.
 
 Configurez par défaut `Ubuntu` dans les paramètres `<CTRL>+,` et choisissez le profile par défaut. Choisissez aussi comme terminal par défaut `Windows Terminal`.
 
-### Familiarisation avec Linux
+## Familiarisation avec Linux
 
 Pour se familiariser avec les exécutables Linux essayons d'installer un programme. Tout d'abord vous devez lancer un terminal. Exécutez Windows Terminal puis depuis le menu déroulant `v` juste à droite du `+` sélectionnez `Ubuntu`.
 
@@ -531,28 +538,78 @@ Votre clé SSH vous permet aussi d'accéder à d'autres ordinateurs à distance 
 
 Expliquez dans votre rapport ce que vous avez compris de cette fonctionnalité `Git Blame`.
 
-### Clone du laboratoire
+### Acceptation de l'invitation
 
-Par la suite, les énoncés des travaux pratiques seront accompagnés de code source à compléter. Les référentiels de code seront disponibles sur GitHub. Le rendu du travail consistera à publier vos changements sur GitHub.
+Votre professeur vous a envoyé un lien vers un travail GitHub Classroom, cliquez sur ce lien, sélectionner votre nom et acceptez l'invitation en cliquant sur *Accept this assignment*. Un message indique :
+
+>You accepted the assignment, Labo-00 . We're configuring your repository now. This may take a few minutes to complete. Refresh this page to see updates.
+
+Patientez quelques secondes puis rafraichissez la page avec la touche F5. Vous aurez le message:
+
+>You’re ready to go!
+>You accepted the assignment, Labo-00.
+>Your assignment repository has been created:
+>https://github.com/info1-tin-b/labo-00-votre-nom
+
+Cliquez sur le lien puis cliquez sur le bouton vert `Code`. Choisissez `SSH` et copiez l'adresse du référentiel. Elle devrait ressembler à quelque chose comme :
+
+```sh
+git@github.com:info1-tin-b/labo-00-votre-nom.git
+```
+
+## Clone du laboratoire
+
+Pour récupérer une copie de votre travail, vous devez faire un *clone* de votre *référentiel*. Maintenant que vous avez copier l'adresse de votre référentiel, effectuez les opérations suivantes :
 
 1. Lancer un terminal Ubuntu
 2. Cloner le référentiel de ce travail pratique avec la commande suivante :
 
    ```sh
-   git clone git@github.com:heig-vd-tin/info1-labo-00.git
+   git clone git@github.com:heig-vd-tin/info1-labo-00-votre-nom.git
    ```
 
-3. Naviguer dans ce répertoire avec `cd info1-labo-00`
-4. Ouvrez le projet avec Visual Studio Code avec `code .` (n'oubliez pas le point)
+3. Naviguer dans ce répertoire avec `cd info1-labo-00-votre-nom` (vous pouvez simplement écrire `cd inf` puis appuyer sur la touche `TAB` pour compléter le nom du répertoire automatiquement).
+4. Ouvrez le projet avec Visual Studio Code avec `code .` (n'oubliez pas l'espace et le point)
 
 C'est principalement ces commandes que vous répéterez tout au long du semestre : `git clone`, `cd`, `code .`.
+
+## Livraison du rendu
+
+Pour livrer votre travail, il vous est demandé de publier vos fichiers sur GitHub.
+
+Depuis votre terminal Ubuntu, dans le répertoire `info1-labo-00` récupéré, créez un dossier `rendu` avec la commande `mkdir rendu`. Puis, déplacez-vous dans ce dossier avec `cd rendu`. Avec la commande `explorer.exe .` (n'oubliez pas le point), vous ouvrez l'explorateur de fichier Windows dans le dossier courant. Vous pouvez copier les fichiers demandés dans ce dossier.
+
+À partir de la console, il faut maintenant ajouter les fichiers à la liste des fichiers à publier avec la commande `git add .`. Puis, il faut créer un *commit* avec la commande `git commit -m "Travail terminé"`. Enfin, il faut publier les changements avec la commande `git push`.
+
+Rendez-vous sur GitHub et vérifiez que vos changements ont bien été publiés. Votre professeur peut maintenant y accéder directement et évaluer votre travail.
+
+## Dernière étape
+
+Pour terminer ce travail pratique, il vous est demandé de créer un fichier `README.md` dans le dossier `rendu` avec le contenu suivant :
+
+```markdown
+# Labo-00
+
+Ce dossier contient le rendu de mon laboratoire Info1, j'ai été heureux de le réaliser.
+
+Je me suis familiarisé un peu avec Markdown, ci dessous quelques exemples de ce que l'on peut faire avec :
+
+> Vous vous inspirerez du fichier source de la donnée du laboratoire (fichier README.md à la racine du référentiel) pour donner quelques exemples de ce que l'on peut faire en Markdown.
+```
+
+Notez que vous pouvez visualiser ce que vous écrivez en direct dans Visual Studio Code. Pour cela, vous pouvez utiliser la commande `Markdown: Open Preview to the Side` depuis le menu des commandes, ou depuis le racourci `<CTRL>+<K> <V>`.
+
+Une fois terminé il ne reste que trois commandes à utiliser :
+
+1. `git add rendu/README.md`
+2. `git commit -m "Ajout fichier Markdown"`
+3. `git push`
 
 ## Résumé
 
 Bravo, vous venez de terminer ce premier travail pratique. Durant toute la procédure, vous avez pu :
 
 - Accéder aux infrastructures réseau de l'école
-- Imprimer des documents
 - Créer un rapport Word
 - Installer Linux sous Windows
 - Configurer Git
@@ -560,4 +617,7 @@ Bravo, vous venez de terminer ce premier travail pratique. Durant toute la proc�
 - Créer une clé SSH et éventuellement GPG
 - Installer Microsoft Visual Studio Code (VsCode)
 - Observer que la Calculatrice Windows est open source et qu'elle renferme de nombreuses fonctionnalités intéressantes
+- Utiliser un peu GitHub et Git
+- Se familiariser avec la syntaxe Markdown
 - Exécuter des programmes sous Linux comme `cowsay`
+- Livrer votre travail sur GitHub
