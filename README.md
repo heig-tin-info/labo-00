@@ -1,11 +1,11 @@
 # Labo-00 : Prise en main de l'ordinateur <!-- omit in toc -->
 
-| Type          | Description |
-| ------------- | ----------- |
-| Durée         | 2x45 minutes + Travail à la maison |
-| Rendu         | 1x archive zip                    |
-| Format | Travail individuel |
-| Évaluation    | Sur la conformité du rapport et de l'archive |
+| Type       | Description                                  |
+| ---------- | -------------------------------------------- |
+| Durée      | 2x45 minutes + Travail à la maison           |
+| Rendu      | 1x archive zip                               |
+| Format     | Travail individuel                           |
+| Évaluation | Sur la conformité du rapport et de l'archive |
 
 ## Table des matières <!-- omit in toc -->
 
@@ -18,6 +18,7 @@
 - [Notepad](#notepad)
 - [Calculatrice Windows](#calculatrice-windows)
 - [Installation des outils de développement](#installation-des-outils-de-développement)
+  - [Winget](#winget)
   - [Visual Studio Code](#visual-studio-code)
   - [WSL](#wsl)
   - [Windows Terminal](#windows-terminal)
@@ -261,17 +262,27 @@ Commencez pas collecter quelques informations liées à cette calculatrice :
 - **Git** : un logiciel de gestion de version logiciel
 - **Visual Studio Code** : un éditeur de code
 
+### Winget
+
+[winget](https://docs.microsoft.com/en-us/windows/package-manager/winget/) est un gestionnaire de paquets pour Windows. Il permet d'installer des logiciels en ligne de commande. C'est une excellente solution afin d'éviter de télécharger des logiciels sur des sites douteux. Pour installer un logiciel, il suffit de taper la commande `winget install nom_du_logiciel`. Souvent les logiciels ont des noms différents de ceux que vous connaissez. La procédure est la suivante :
+
+1. Allez sur https://winget.run/
+2. Chercher le programme que vous voulez installer (p.ex. VisualStudioCode)
+3. Copiez la commande `winget install nom_du_logiciel`
+4. Ouvrez un terminal Windows (Windows Terminal) et collez la commande
+5. Appuyez sur `<ENTER>`
+
 ### Visual Studio Code
 
 [Visual Studio Code](https://code.visualstudio.com/) est un éditeur de code extensible développé par [Microsoft](https://fr.wikipedia.org/wiki/Microsoft) pour Windows, Linux et macOS. Il est un bon point de départ pour programmer dans différents langages (C, C++, Python, JavaScript, Perl, Java...).
 
 Cet éditeur a été choisi pour ce cours, car il est très complet, assez léger et surtout, il fonctionne très bien avec WSL sous macOS et naturellement sous Linux.
 
-> Vous pouvez vous rendre sur [2022 Developer Survey](https://survey.stackoverflow.co/2022/) et descendre à *Integrated development environment* [ici](https://survey.stackoverflow.co/2022/#section-most-popular-technologies-integrated-development-environment). Constatez quel est l'éditeur le plus populaire dans la communauté en 2022.
+> Vous pouvez vous rendre sur [2024 Developer Survey](https://survey.stackoverflow.co/2024/) et descendre à *Integrated development environment* [ici](https://survey.stackoverflow.co/2024/technology/#1-integrated-development-environment). Constatez quel est l'éditeur le plus populaire dans la communauté en 2024.
 
 Allez, en avant, installons Visual Studio Code...
 
-1. Installer Visual Studio Code
+1. Installer Visual Studio Code (vous pouvez utiliser `winget` pour cela)
 2. Exécutez Visual Studio Code
 3. Avec le raccourci `<CTRL>+<K> <CTRL>+<O>`, ouvrez votre dossier de rendu :
    1. sur la gauche de la fenêtre, vous avez la liste des fichiers de votre dossier.
@@ -308,7 +319,7 @@ Utilisez la combinaison `<CTRL>+<SHIFT>+<X>` pour afficher les extensions et ins
 Pour installer ce système, vous avez plusieurs solutions ; voici la première :
 
 1. Utilisez la [documentation](https://learn.microsoft.com/en-us/windows/wsl/install) de Microsoft pour installer WSL
-2. Choisissez votre distribution préférée. À défaut, optez pour **Ubuntu**.
+2. Choisissez comme distrubution **Ubuntu 24.04 LTS**
 
 Une fois WSL et Ubuntu installés effectuer les opérations suivantes :
 
@@ -385,7 +396,7 @@ Ce que vous devez retenir c'est que:
 
 ### Git
 
-Git est un logiciel de gestion de version très utilisé par les développeurs logiciels. Il est utilisé dans ce cours comme outil principal pour accéder aux énoncés de laboratoire et soumettre vos modifications. Avantageusement, Git est déjà installé avec Ubuntu 22.04, mais nous devons le configurer avant de pouvoir l'utiliser.
+Git est un logiciel de gestion de version très utilisé par les développeurs logiciels. Il est utilisé dans ce cours comme outil principal pour accéder aux énoncés de laboratoire et soumettre vos modifications. Avantageusement, Git est déjà installé avec Ubuntu 24.04, mais nous devons le configurer avant de pouvoir l'utiliser.
 
 #### Configuration de Git
 
