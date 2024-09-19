@@ -240,13 +240,14 @@ Commencez pas collecter quelques informations liées à cette calculatrice :
    2. Capturez la fenêtre de la calculatrice avec `<WIN>+<MAJ>+<S>`.
    3. Insérer la capture dans votre rapport.
 3. Entrez en mode programmeur
+4. Agrandissez la fenêtre pour voir apparaître la mémoire à droite
    1. Saisir en hexadécimal (HEX) la valeur `5F3759DF`
    2. Le sauver dans la mémoire (MS)
-   3. Entrez en mode d'édition des bits
+   3. Entrez en mode d'édition des bits (icône à gauche de QWORD)
       1. Commutez les bits 0, 8, 16 et 23
       2. Sauver ce nouveau nombre dans la mémoire avec (MS)
       3. Notez que vous avez dans votre mémoire (à droite de l'écran) deux grandeurs commençant normalement par `5FB6` et `5F37`.
-      4. Soustraire au premier nombre ajouté le nombre actuellement affiché en sélectionnant `M-` sur la valeur sauvegardée dans la mémoire. Ce nombre devrait commencer par plusieurs `F`.
+      4. Soustraire au premier nombre ajouté le nombre actuellement affiché en sélectionnant `M-` sur la valeur sauvegardée dans la mémoire (le nombre du bas). Ce nombre devrait commencer par plusieurs `F`.
          1. Que vaut ce résultat en décimal (`DEC`) ?
    4. Faite une capture d'écran similaire à celle ci-dessous, mais avec les bonnes valeurs soit :
       1. Deux valeurs dans la mémoire `0x5F3759DF` et le résultat de la soustraction
