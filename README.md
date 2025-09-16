@@ -3,7 +3,7 @@
 | Type       | Description                                  |
 | ---------- | -------------------------------------------- |
 | Durée      | 2x45 minutes + Travail à la maison           |
-| Rendu      | Sur GitHub   p                               |
+| Rendu      | Sur GitHub                                   |
 | Format     | Travail individuel                           |
 | Évaluation | Sur la conformité du rapport et de l'archive |
 
